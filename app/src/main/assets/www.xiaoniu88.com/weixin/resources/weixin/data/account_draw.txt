@@ -1,0 +1,1 @@
+{"fee":1,"count":1,"withdraw":{"bankCardNo":"4380880000000007","bankTypeName":"招商银行","bankType":"CMB","userBalance":3.00,"realName":"邱君华","status":4,"needBranch":false}}

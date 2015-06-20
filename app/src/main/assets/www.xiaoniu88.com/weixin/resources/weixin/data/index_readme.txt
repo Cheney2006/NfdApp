@@ -1,0 +1,63 @@
+{
+    "bannerDTO": [
+        {
+            "id": 65,
+            "type": 3,
+            "title": "国家队",
+            "content": null,
+            "imgPath": "http://guomingjun_serverupload/fund/20141013/201410131807289793.jpg",
+            "url": "http://www.xiaoniu88.com/frontMediaReportDetails.do?id=154",
+            "sortIndex": 1
+        },
+        {
+            "id": 64,
+            "type": 3,
+            "title": "注册红包",
+            "content": null,
+            "imgPath": "http://guomingjun_serverupload/fund/20141011/201410110904171129.jpg",
+            "url": "http://www.xiaoniu88.com/frontNewsDetails.do?id=136",
+            "sortIndex": 2
+        },
+        {
+            "id": 63,
+            "type": 3,
+            "title": "安心牛aaa",
+            "content": null,
+            "imgPath": "http://guomingjun_serverupload/fund/20140926/201409260929318659.jpg",
+            "url": "http://www.xiaoniu88.com/activity/preferredPlan/preferredPlan.jsp",
+            "sortIndex": 3
+        },
+        {
+            "id": 62,
+            "type": 3,
+            "title": "10亿庆典",
+            "content": null,
+            "imgPath": "http://guomingjun_serverupload/fund/20141011/201410111456402652.jpg",
+            "url": "abcccc",
+            "sortIndex": 4
+        },
+        {
+            "id": 61,
+            "type": 3,
+            "title": "南都活动",
+            "content": null,
+            "imgPath": "http://guomingjun_serverupload/fund/20140821/201408211835124492.jpg",
+            "url": "http://www.xiaoniu88.com/activity/wealthKey/wealthKeyActivity.jsp",
+            "sortIndex": 5
+        }
+    ],
+    "indexPtdDTO": {
+        "id": 33058,
+        "productTitle": "安居宝D20141224-631",
+        "minAnnualRate": "13.80",
+        "maxAnnualRate": "14.20",
+        "line": "12",
+        "productAmount": "4,000.00",
+        "minAmount": "1,000.00",
+        "productSchedule": 100,
+        "productStatus": 4,
+        "isFull": "01",
+        "count": 2
+    },
+    "balance": 1
+}

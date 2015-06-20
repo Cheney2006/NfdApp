@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>我的账户-小牛在线</title>
+<base href="/weixin/resources/weixin/account_info.html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="stylesheet" type="text/css" href="css/wx_common.css?v=2015012701">
+<link rel="stylesheet" type="text/css" href="css/wx_account.css?v=2015012701">
+</head>
+<body>
+<div class='wx_top'> <a class="wx_top_logo" href="/weixin/index"> </a> <span class="wx_top_gap"></span> <span class='wx_top_title'>我的账户</span>
+<div class="wx_top_btn wx_top_loginout"><a class="" href="/weixin/logout">安全退出</a></div>
+</div>
+<div class="wx_account">
+	<div class="wx_list_tab">
+      <a href="/weixin/account/send/index" class="select" id="wx_tab_axn"><span><em>账户总览</em></span></a>
+      <a href="/weixin/account/send/invest" id="wx_tab_sanbiao"><span><em>我的投资</em></span></a>
+    </div>
+    <h3 class="wx_account_title">我的资料</h3>
+    <div class="wx_info" id="container">
+        <div class="wx_loading"></div>
+    </div>
+</div>
+<div class="foot">
+    <div class="foot_nav_list">
+        <span class="foot_nav"><a href="/weixin/index" class="foot_nav nav_index"><i></i><em>首页</em></a></span>
+        <span class="foot_nav"><a href="list.html#axn" class="foot_nav nav_invest"><i></i><em>我要投资</em></a></span>
+        <span class="foot_nav"><a href="/weixin/account/send/index" class="foot_nav nav_account nav_account_cur"><i></i><em>我的账户</em></a></span>
+        <span class="foot_nav"><a href="aboutus.html" class="foot_nav nav_about"><i></i><em>关于小牛</em></a></span>
+    </div>
+</div>
+<!--内容模板-->
+<script id="pageTmpl" type="text/x-dot-template">
+<%	var data = it.data;%>
+<%if(!data.idNo){%>
+	<div class="wx_info_tip">
+		<p><strong>提示：</strong></p>
+		<p>您还没有进行实名登记！</p>
+		<p>为了您的资金安全，请用电脑打开小牛在线官网 <strong>www.xiaoniu88.com</strong> 进行实名登记。</p>
+	</div>
+<%}%>
+<div class="wx_account_table2 wx_info_list">
+	<p><span>真实姓名</span><i><%=data.realName || "<em>未填写</em>"%></i></p>
+	<p><span>身份证号</span><i><%=data.idNo || "<em>未填写</em>"%></i></p>
+	<p><span>常用邮箱</span><i><%=data.email || "<em>未填写</em>"%></i></p>
+	<p><span>绑定手机</span><i><%=data.mobile%></i></p>
+</div>
+</script>
+<script type="text/javascript">
+window.onerror = function(a,b,c,d,e,f){
+	var img = new Image();	
+	img.src = "http://www.baidu.com/favicon.ico?a="+a.replace(/\s/g,"_");
+}
+</script>
+<script type="text/javascript" src="lib/zepto.min.js?v=2015012701"></script>
+<script type="text/javascript" src="lib/doT/doT.min.js?v=2015011301"></script>
+<script type="text/javascript" src="js/wx_common.js?v=2015012701"></script>
+<script type="text/javascript">
+$(function(){
+	//数据路径
+	var requestData = {
+		tpl:$("#pageTmpl").html(),
+		data:"/weixin/account/info"
+	};
+	init();
+	//初始化
+	function init(){
+		var $container = $("#container");
+		//请求模板和数据，并调用回调
+		$.render({type:"POST",tpl:requestData.tpl,data:requestData.data},function(data,html){
+			$container.html(html);
+		});
+	}
+});
+</script>
+<div style="display:none">
+<!-- 百度 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b496057df9cc0bac8d2f7dbf69606c5a";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*新样式 nfd-slide 开始*/
+/**
+ * 首页广告区
+ */
+#nfd-slide {
+	height:auto;
+	min-height: 133px;
+	max-width: 640px;
+	overflow: hidden;
+	position: relative;
+}
+
+#nfd-slide .ws-flipsnap {
+	width: 100%;
+	font-size: 0;
+	white-space: nowrap;
+}
+
+#nfd-slide .ws-wrap {
+	width: 100%;
+	display: inline-block;
+}
+
+#nfd-slide .ws-wrap img {
+	width: 100%;
+	height: auto;
+}
+
+#nfd-slide .ws-nav {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#nfd-slide .ws-nav span {
+	display: inline-block;
+	margin-right: 3px;
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	background: #b6b6b6;
+}
+
+#nfd-slide .ws-nav .ws-selected {
+	background: #fff;
+}
+
+#nfd-home-buttons {
+	height: 37px;
+	padding: 10px;
+	padding-top: 9px;
+}
+
+#nfd-home-buttons a {
+	float: left;
+	width: 48%;
+	margin: 0 1%;
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+	height: 37px;
+	line-height: 37px;
+}
+
+#nfd-home-buttons .login {
+	background-color: #0caffe;
+}
+
+#nfd-home-buttons .reg {
+	background-color: #ff8124;
+}
+
+#nfd-home-buttons .account {
+	background-color: #0caffe;
+	width: 98%;
+}
+
+
+/*新样式 nfd-slide 结束*/
+

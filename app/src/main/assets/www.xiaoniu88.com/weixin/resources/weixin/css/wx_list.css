@@ -1,0 +1,189 @@
+@charset "utf-8";
+.wx_top {
+	margin-bottom: 0;
+}
+/*list*/
+.wx_list_tabContent { display:none; }
+.wx_list {
+}
+.wx_list ul {
+	padding: 0;
+	margin: 0;
+}
+.wx_list ul li {
+	border-bottom: #e5e5e5 solid 1px;
+	overflow: hidden;
+}
+.wx_list ul li a {
+	display: block;
+	padding: 10px 21px;
+	position: relative;
+}
+/*安心牛*/
+.wx_list_box { }
+.wx_list_m {
+	position: absolute;
+	left: 21px;
+	top: 12px;
+	width: 80px;
+}
+.wx_list_date {
+	display: block;
+	width: 51px;
+	height: 51px;
+	line-height: 51px;
+	background: #a5a5a5 url(../img/wx_list/wx_invest_list_bg.png) center center no-repeat;
+	background-size: 45px 45px;
+	margin-left: 2px;
+	font-size: 38px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 6px;
+}
+.wx_list_text {
+	font-size: 12px;
+	color: #666;
+}
+.wx_list_1 .wx_list_date {
+	background-color: #cda148;
+}
+.wx_list_1 em {
+	color: #cda148;
+}
+.wx_list_3 .wx_list_date {
+	background-color: #fa6b0d;
+}
+.wx_list_3 em {
+	color: #fa6b0d;
+}
+.wx_list_6 .wx_list_date {
+	background-color: #0072a6;
+}
+.wx_list_6 em {
+	color: #0072a6;
+}
+.wx_list_12 .wx_list_date {
+	background-color: #5ba303;
+}
+.wx_list_12 em {
+	color: #5ba303;
+}
+
+.wx_list_fs28 .wx_list_date { 
+	font-size:28px;
+}
+
+
+.wx_list_info {
+	padding-left: 80px;
+}
+.wx_list_info p {
+	line-height: 26px;
+	color: #666;
+	overflow: hidden;
+	white-space:nowrap;
+	width:100%;
+}
+.wx_list_info p strong {
+	float: left;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	margin-right:5px;
+	display:inline-block;
+}
+.wx_list_info p ins:nth-last-child(1) { margin-right:0; }
+.wx_list_info p span {
+	color: #9c9c9c;
+	font-size: 12px;
+	padding-right: 10px;
+}
+.wx_list_info p span:last-child { padding-right:0; }
+.wx_list_info p span i {
+	color: #fa6b0d;
+	padding-right: 2px;
+}
+.wx_list_info p.wx_flex_btw span {
+	padding-right: 0;
+}
+.wx_list_info p i {
+	color: #cda148;
+	font-size: 12px;
+}
+.wx_list_info p span.wx_list_countdown {
+	color: #fa6b0d;
+}
+/*散标列表*/
+.wx_list_info2 {
+	padding-left: 0;
+}
+.wx_list_info2 span {
+	padding-right: 15px;
+}
+.wx_list_info2 span.wx_list_type {
+	float: left;
+}
+.wx_list_info2 p.wx_flex_btw { padding-right:12px; }
+.wx_list_info2 p.wx_flex_end { padding-right:130px; }
+/*完成的标*/
+.wx_list_side {
+	font-size: 12px;
+	color: #9c9c9c;
+	background-color: #f5f5f5;
+	width: 137px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 97px;
+}
+.wx_list_side p {
+	line-height: 22px;
+	margin:26px 0 0 10px;
+}
+.wx_list_end {
+	margin-right: 116px;
+}
+.wx_list_end em { color:#666; }
+.wx_list_end p span {
+	padding-right: 10px;
+}
+.wx_list_end .wx_list_date {
+	background-color: #a5a5a5;
+}
+.wx_list ul li.wx_axn_end { /*border-bottom:#fff solid 1px;*/ }
+.wx_list ul li.wx_axn_end,
+.wx_list ul li.wx_sanbiao_end { background-color:#f5f5f5; }
+
+
+/*列表进度条*/
+.wx_list .wx_progress {
+	margin-top: 10px;
+	margin-right: 64px;
+	width: auto;
+	position: relative;
+}
+.wx_list .wx_progress em {
+	position: absolute;
+	right: -70px;
+	top: -4px;
+	font-size: 12px;
+	color: #9c9c9c;
+	width: 60px;
+	text-align: left;
+}
+.wx_list .wx_progress span { padding:0; }
+
+/*大于350时宽度时，加大列表元素的间隔*/
+@media all and (min-width:360px) {
+	.wx_list_info p span {
+		padding-right: 25px;
+	}
+}
+@media all and (max-width:360px) {
+	.wx_list_info p span i { padding-right:0; }
+	.wx_list_info p span { padding-right:2px; }
+	.wx_list ul li.wx_list_axn a { padding:10px 10px; }
+	.wx_list ul li.wx_list_sanbiao a { padding:10px 15px; }
+	.wx_list_m { left:13px; }
+	.wx_list_tab { padding:11px 15px; }
+}

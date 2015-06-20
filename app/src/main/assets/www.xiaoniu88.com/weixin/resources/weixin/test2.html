@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<style type="text/css">
+html { margin: 0; height: 100%; }
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Microsoft YaHei",SimHei,helvetica,arial,verdana,tahoma,sans-serif;
+}
+h1, h2, p, textarea, form {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.bg {
+  background: url(http://s2.mimg.ifeng.com/upload/day_131031/201310311622423447_size4_w100_h100_iifeng.png);
+  background-size: 50px 50px;
+}
+.icon {
+  background: url(http://y0.ifengimg.com/ifengimcp/pic/20140813/585e450ef873483c6b44_size31_w640_h640.png) no-repeat;
+  background-size: 320px 320px;
+  font: 0px/0px a;
+}
+.icon em {
+  visibility: hidden;
+}
+
+.icon24 {
+  width: 12px;
+  height: 10px;
+  display: block;  
+}
+
+.icon34 {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+
+.anim {
+
+/*
+  -webkit-transition: 0.3s;
+*/
+  -webkit-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.assist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* top */
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  border-bottom: 1px solid #bebebe;
+  z-index: 100;
+  -moz-box-shadow: 0px 2px 3px #FFF inset, 0px 1px 2px #afafaf;
+  -webkit-box-shadow: 0px 2px 3px #FFF inset, 0px 1px 2px #afafaf;
+  box-shadow: 0px 2px 3px #FFF inset, 0px 1px 2px #afafaf;        
+
+}
+.top .app {
+  float: right;
+  height: 44px;
+  width: 137px;
+}
+.top nav button {
+  width: 45px;
+  height: 44px;
+  border-right:1px solid #bdbdbd;
+  -moz-box-shadow: 1px 0 0 #fff;
+  -webkit-box-shadow: 1px 0 0 #fff;
+  box-shadow: 1px 0 0 #fff;        
+  margin-right: 1px;
+}
+.top .home {
+  background-position: -0px -50px;
+}
+.top .share {
+  background-position: -50px -50px;
+}
+.top .share_active {
+  background-position: -100px -50px;
+}
+
+/* pic */
+.pic_box {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  white-space:nowrap;
+}
+
+.pic_slider {
+/*
+  -webkit-transform: translate3d(-200%,0,0);
+*/
+  font: 0px/0px a;
+  height: 100%;
+}
+.pic_slider div{
+  background: no-repeat center;
+  background-image: url(http://s1.mimg.ifeng.com/upload/day_131031/201310311623218964_size10_w320_h90_iifeng.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: block;
+  float: left;
+}
+
+.pic_slider div img {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.testBox {
+
+}
+/* content */
+.content_box {
+  position: relative;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin-top: -85px;
+  padding: 0 23px;
+  background-color: rgba(255, 255, 255, .5);
+  padding-bottom: 44px;    
+}
+
+.content_box header {
+  padding: 20px 0 8px 0;
+/*
+  text-align: center;
+*/
+}
+
+.content_box h1 {
+  display: inline-block;
+  font-size: 14px;
+  color: #2c2c2c;
+  padding-right: 3px;
+}
+
+.content_box header span {
+  font-size: 12px;
+  color: #2C2C2C;
+/*
+  font-weight: bold;
+*/
+}
+
+.content_box p {
+  font-size: 12px;
+  color: #5d5d5d;
+  line-height: 20px;
+}
+
+/* comment */
+.comment_box .comment_inner {
+  background-position: 0 -20px;
+}
+
+.comment_box .comment_input_box {
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 9px 10px 0 10px;
+}
+
+.comment_box .comment_input {
+  width: 100%;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 0;
+  font-size: 14px;
+  padding-top: 7px;
+  padding-left: 7px;
+  color: #7f7f7f;
+  background-color: #f4f4f4;
+  -moz-box-shadow: 1px 1px 2px #afafaf inset;
+  -webkit-box-shadow:1px 1px 2px #afafaf inset;
+  box-shadow: 1px 1px 2px #afafaf inset;        
+}
+
+.mini_comment {
+/*
+  margin-top: 30px;
+*/
+}
+
+.mini_comment .comment_shadow {
+  height: 4px;
+  background: url(http://s0.mimg.ifeng.com/upload/day_131031/201310311623419976_size2_w640_h8_iifeng.png) no-repeat center, top;
+  background-size: 100% 100%; 
+}
+
+.mini_comment .comment_toolbar {
+  display: none;
+}
+
+.mini_comment .comment_input_box {
+  overflow: hidden;
+  height: 44px;
+}
+.mini_comment .comment_count {
+  float: right;
+  width: 54px;
+  height: 44px;
+  text-align: center;
+  font-size: 12px;
+  color: #2C2C2C;
+  border-left: 1px solid #FFF;
+  -moz-box-shadow: -1px 0 0 #bdbdbd;
+  -webkit-box-shadow:-1px 0 0 #bdbdbd;
+  box-shadow: -1px 0 0 #bdbdbd;        
+}
+
+.mini_comment .comment_count .icon24 {
+  background-position: -175px -75px;
+  margin: 13px auto 2px auto;
+}
+
+.mini_comment .comment_input {
+  height: 28px;
+}
+
+.full_comment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+.full_comment .comment_shadow {
+  display: none;
+}
+
+.full_comment .comment_inner {
+  min-height: 800px;
+}
+
+.full_comment .comment_toolbar {
+  height: 41px;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  overflow: hidden;
+  padding: 16px 13px 0px 13px;
+}
+
+.comment_box button {
+  font-size: 17px;
+  color: #868686;
+}
+
+.comment_box button strong {
+  display: inline-block;
+  height: 17px;
+  margin-left: 3px;
+}
+
+.comment_toolbar h2 {
+  text-align: center;
+  font-size: 18px;
+}
+.comment_submit {
+  float: right;
+}
+.comment_submit .icon34 {
+  background-position: -225px -73px;
+}
+.comment_close {
+  float: left;
+}
+.comment_close .icon34 {
+  background-position: -200px -72px;
+}
+
+.full_comment .comment_count {
+  display: none;
+}
+
+.full_comment .comment_input_box {
+  padding-top: 0;
+}
+
+.full_comment .comment_input {
+  height: 139px;
+}
+
+/* share */
+.share_box {
+  position: absolute;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  top: 44px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  height: 77px;
+  padding-top: 10px;
+  z-index: 50;
+  text-align: center;        
+}
+
+.share_box button {
+  display: inline-block;
+  width: 50px;
+  height: 57px;
+  margin-right: 46px;
+}
+
+.share_box .share-btn1 {
+  background-position: -150px 0;
+}
+.share_box .share-btn2 {
+  background-position: -200px 0;
+}
+.share_box .share-btn3 {
+  background-position: -250px 0;
+  margin-right: 0;
+}
+
+.mini_viewport .share_box, .share_box {
+  opacity: 0;
+  -webkit-transform: translate3d(0,-121px,0);
+  -ms-transform: translate3d(0,-121px,0);
+  -moz-transform: translate3d(0,-121px,0);
+  -o-transform: translate3d(0,-121px,0);
+  transform: translate3d(0,-121px,0);
+}
+
+.share_box_show {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.mini_viewport .top {
+  opacity: 0;
+  -webkit-transform: translate3d(0,-44px,0);
+  -ms-transform: translate3d(0,-44px,0);
+  -moz-transform: translate3d(0,-44px,0);
+  -o-transform: translate3d(0,-44px,0);
+  transform: translate3d(0,-44px,0);
+}
+
+.mini_viewport .content_box {
+  margin-top: -45px;
+}
+
+    </style>
+    <title>咱李克强总理在达沃斯就是这样淡定！</title>
+  </head>
+  <body>
+          <header class="top bg anim">
+      <button type="button" class="icon app" data-target="blank" data-url="http://api.3g.ifeng.com/ifengtg?ch=uc_h5xw&amp;vt=5&amp;adid=11989&amp;mid=1u9Mkd"><em>下载凤凰新闻客户端</em></button>
+      <nav>
+        <button type="button" class="home icon" data-url="/news/pic/pici?ch=uc_h5xw&vt=5&mid=1u9Mkd"><em>返回首页</em></button><button class="share icon" id="share_btn"><em>分享</em></button>
+      </nav>
+    </header>
+      <!-- 幻灯片列表 注意div直接不要换行和有空格 begin-->
+    <section class="pic_box" id="pic_box">
+      <div class="pic_slider" id="pic_slider">
+                           <div data-src="http://y0.ifengimg.com/ifengimcp/pic/20150122/ddbf9ec3e70e38c53c7e_size733_w4414_h3173.jpg"></div><div data-src="http://y3.ifengimg.com/ifengimcp/pic/20150122/0403e9635600457d952f_size1240_w3000_h1963.jpg"></div><div data-src="http://y2.ifengimg.com/ifengimcp/pic/20150122/e0ae73285b069d2a9f74_size464_w4300_h3167.jpg"></div><div data-src="http://y1.ifengimg.com/ifengimcp/pic/20150122/41984e130b9aef1d749c_size476_w4780_h3215.jpg"></div><div data-src="http://y0.ifengimg.com/ifengimcp/pic/20150122/b4dbda425868c7e53864_size480_w2939_h1911.jpg"></div><div data-src="http://y1.ifengimg.com/ifengimcp/pic/20150122/467403b130ab4ab16b8e_size390_w4457_h3130.jpg"></div><div data-src="http://y0.ifengimg.com/ifengimcp/pic/20150122/7a1f205ae6946bd88e5e_size456_w4512_h2957.jpg"></div><div data-src="http://y2.ifengimg.com/ifengimcp/pic/20150122/e9fb6397a57fbd42fccf_size464_w4168_h2713.jpg"></div><div data-src="http://y1.ifengimg.com/ifengimcp/pic/20150122/491ff1aafc3357637795_size598_w3355_h2484.jpg"></div>   
+                        </div>
+    </section>
+<!-- 幻灯片列表 end-->
+   <section class="content_box anim" id="content_box">
+      <header>
+        <h1>咱李克强总理在达沃斯就是这样淡定！</h1>
+        <span id="content_index"></span>
+      </header>
+      <p id="content_info"></p>
+  </section>
+
+<section class="comment_box mini_comment" id="comment_box">
+      <div class="comment_shadow"></div>
+      <form action="wappost.f?ch=uc_h5xw&amp;vt=5&amp;mid=1u9Mkd" method="post">
+       <input type="hidden" name="aid" value="95077451" /><input type="hidden" name="_gp" value="" /><input type="hidden" name="doc_url" value="http://wap.ifeng.com/news.jsp?aid=95077451" /><input type="hidden" name="quoteId" value="" /><input type="hidden" name="_token_" value="" /><input type="hidden" name="client_ip" value="119.137.35.142" /><input type="hidden" name="_token_ip_" value="26001f7a0ea210581ac423ecd71b1864" /><input type="hidden" name="ext[useragent]" value="ucweb" /><input type="hidden" name="ext[wapversion]" value="5" />        
+        <div class="comment_inner bg">
+          <div class="comment_toolbar">
+            <button type="submit" class="comment_submit" id="comment_submit"><i class="icon icon34"></i><strong>发送</strong></button>
+            <button type="button" class="comment_close" id="comment_close"><i class="icon icon34"></i><strong>关闭</strong></button>
+            <h2>评论</h2>
+          </div>
+          <div class="comment_count" data-target="blank" data-url="waplist.f?ch=uc_h5xw&amp;vt=5&amp;aid=95077451&amp;mid=1u9Mkd">
+              <i class="icon icon24"></i><strong id="comment_count"></strong></div>
+          <div class="comment_input_box">
+            <textarea class="comment_input" id="comment_input" name="content" placeholder = "输入评论"></textarea>
+          </div>
+        </div>
+        
+      </form>
+</section> 
+   <section class="share_box share_box_hide anim" id="share_box">
+      <button class="share-btn1 icon" data-target="blank" data-url="/weibo/wapnews/isina?vt=&ls=1&s_surl=http%3A%2F%2Fi.ifeng.com%2Fnews%2Fpic%2Fnewspic%2Fnews%3Faid%3D95077451&aid=95077451&vt=&key=wbSA0&v=2&s_subject=%E5%92%B1%E6%9D%8E%E5%85%8B%E5%BC%BA%E6%80%BB%E7%90%86%E5%9C%A8%E8%BE%BE%E6%B2%83%E6%96%AF%E5%B0%B1%E6%98%AF%E8%BF%99%E6%A0%B7%E6%B7%A1%E5%AE%9A%EF%BC%81"><em>新浪微博</em></button>
+      <button class="share-btn2 icon" data-target="blank" data-url="http://ti.3g.qq.com/open/s?aid=share&sbid=801278057&g_ut=3&msg=%E5%92%B1%E6%9D%8E%E5%85%8B%E5%BC%BA%E6%80%BB%E7%90%86%E5%9C%A8%E8%BE%BE%E6%B2%83%E6%96%AF%E5%B0%B1%E6%98%AF%E8%BF%99%E6%A0%B7%E6%B7%A1%E5%AE%9A%EF%BC%81http%3A%2F%2Fi.ifeng.com%2Fnews%2Fpic%2Fnewspic%2Fnews%3Faid%3D95077451%26vt%3D%26mid%3D1u9Mkd&return=http%3A%2F%2Fi.ifeng.com%2Fnews%2Fpic%2Fnewspic%2Fnews%3Faid%3D95077451%26vt%3D%26mid%3D1u9Mkd"><em>腾讯微博</em></button>
+      <button class="share-btn3 icon" data-target="blank" data-url="http://go.10086.cn/ishare.do?m=t&u=http%3A%2F%2Fi.ifeng.com%2Fnews%2Fpic%2Fnewspic%2Fnews%3Faid%3D95077451&t=%E5%92%B1%E6%9D%8E%E5%85%8B%E5%BC%BA%E6%80%BB%E7%90%86%E5%9C%A8%E8%BE%BE%E6%B2%83%E6%96%AF%E5%B0%B1%E6%98%AF%E8%BF%99%E6%A0%B7%E6%B7%A1%E5%AE%9A%EF%BC%81&sid=452936375729"><em>爱分享</em></button>
+    </section>
+     <div id = "log" style="position: absolute; top: 100px; z-index: 9999; background: #FF0"></div>
+    <div id="assist_view_port" class="assist"></div>
+    <div id="assist_hide_bar" class="assist"></div>
+        <script type="text/javascript">
+  window.descData = ["\u5f53\u4f60\u5373\u5c06\u9762\u5bf9\u8fd1\u5343\u540d\u653f\u754c\u5927\u4f6c\u3001\u5546\u754c\u5927\u8155\u513f\u548c\u5b66\u754c\u540d\u4eba\u53d1\u8868\u6f14\u8bb2\uff0c\u5f53\u4f60\u5373\u5c06\u63a5\u53d7\u4e0a\u767e\u5bb6\u77e5\u540d\u8de8\u56fd\u4f01\u4e1a\u638c\u95e8\u4eba\u7684\u63d0\u95ee\uff0c\u4f60\u4f1a\u600e\u4e48\u529e\uff1f\u53cd\u590d\u80cc\u8bf5\u6f14\u8bb2\u8bcd\uff0c\u8fd8\u662f\u4e00\u904d\u904d\u5ff5\u53e8\u51c6\u5907\u597d\u7684\u7b54\u6848\uff1f\u54b1\u603b\u7406\u7684\u9009\u62e9\u662f\uff0c\u767b\u9ad8\u671b\u8fdc\uff01\r\n\u4e00\u5c0f\u65f6\u540e\uff0c\u4ed6\u5c31\u8981\u540c\u4e16\u754c\u7ecf\u6d4e\u8bba\u575b\u56fd\u9645\u5de5\u5546\u7406\u4e8b\u4f1a\u7684\u4e0a\u767e\u540d\u4ee3\u8868\u4eec\u5bf9\u8bdd\uff0c\u6309\u7167\u4ee5\u5f80\u60ef\u4f8b\uff0c\u4ee3\u8868\u4eec\u8fd8\u4f1a\u63d0\u51fa\u5404\u79cd\u5404\u6837\u7684\u95ee\u9898\u3002\u53ef\u603b\u7406\u5c45\u7136\u4ece\u81ea\u5df1\u4e0b\u69bb\u7684\u9152\u5e97\u51fa\u53bb\u767b\u9ad8\u671b\u8fdc\u53bb\u4e86\uff01\u4e00\u4f4d\u5e38\u5e74\u968f\u4ed6\u51fa\u884c\u7684\u8bb0\u8005\u8bf4\uff0c\u4ece\u6765\u6ca1\u89c1\u603b\u7406\u8fd9\u6837\u201c\u5077\u5f97\u6d6e\u751f\u534a\u523b\u95f2\u201d\u3002","\u4e0a\u4e86\u5c71\u9876\uff0c\u624d\u660e\u767d\u54b1\u603b\u7406\u4e3a\u4ec0\u4e48\u8981\u6765\u3002\u8fbe\u6c83\u65af\u5c0f\u9547\u5730\u5904\u963f\u5c14\u5351\u65af\u5c71\u8109\uff0c\u5468\u56f4\u7fa4\u5c71\u73af\u62b1\u3002\u6d77\u62d41800\u7c73\u7684\u6c99\u8328\u963f\u5c14\u5351\u5c71\u9876\u89c6\u91ce\u6781\u597d\uff0c\u6781\u76ee\u8fdc\u773a\uff0c\u84dd\u5929\uff0c\u767d\u4e91\uff0c\u96ea\u5cf0\uff0c\u82cd\u677e\uff0c\u5468\u56f4\u9759\u8c27\u5f97\u4f3c\u4e4e\u53ea\u5269\u4e0b\u79ef\u96ea\u6389\u843d\u7684\u58f0\u97f3\u3002\r\n\u6240\u8c13\u201c\u6bcf\u4e34\u5927\u4e8b\u6709\u9759\u6c14\u201d\uff0c\u54b1\u603b\u7406\u8fd8\u771f\u6c89\u5f97\u4f4f\u6c14\u3002\u5c31\u5728\u8fd9\u5b89\u5b81\u7965\u548c\u7684\u5c0f\u9547\u4e0a\uff0c\u4f17\u591a\u91cd\u91cf\u7ea7\u653f\u5546\u5927\u4f6c\u7b49\u7740\u4e0e\u4ed6\u5934\u8111\u98ce\u66b4\uff0c\u800c\u4e14\u4e2a\u4e2a\u6709\u5907\u800c\u6765\uff0c\u5bf9\u4e2d\u56fd\u6216\u62b1\u6709\u8d28\u7591\uff0c\u6216\u6000\u6709\u671f\u5f85\u3002\u9ad8\u624b\u5bf9\u51b3\uff0c\u8981\u7684\u5c31\u662f\u8fd9\u6837\u7684\u6c14\u5b9a\u795e\u95f2\uff0c\u8981\u7684\u5c31\u662f\u8fd9\u5206\u6de1\u5b9a\u3002","\u4e0d\u8fc7\uff0c\u63a5\u4e0b\u6765\u7684\u8282\u594f\u5c31\u8ba9\u4eba\u5f88\u4e0d\u6de1\u5b9a\u4e86\uff1a\u514b\u5f3a\u603b\u7406\u5148\u662f\u540c\u8bba\u575b\u56fd\u9645\u5de5\u5546\u7406\u4e8b\u4f1a\u7684\u4ee3\u8868\u4eec\u5bf9\u8bdd\u4ea4\u6d41\uff0c\u56de\u7b54\u4e864\u4f4d\u4f01\u4e1a\u5bb6\u63d0\u51fa\u7684\u95ee\u9898\uff1b\u63a5\u7740\u524d\u5f80\u8fbe\u6c83\u65af\u5e02\u653f\u5e9c\uff0c\u4e0e\u745e\u58eb\u8054\u90a6\u4e3b\u5e2d\u7d22\u9a6c\u9c81\u52a0\u4e3e\u884c\u4f1a\u8c08\uff0c\u5e76\u5171\u540c\u51fa\u5e2d\u7b7e\u5b57\u4eea\u5f0f\uff1b\u6d3b\u52a8\u7ed3\u675f\u540e\u53c8\u8fd4\u56de\u56fd\u9645\u4f1a\u8bae\u4e2d\u5fc3\uff0c\u51fa\u5e2d\u8bba\u575b\u5168\u4f1a\u3001\u53d1\u8868\u7279\u522b\u81f4\u8f9e\u5e76\u56de\u7b54\u63d0\u95ee\uff1b\u5929\u90fd\u64e6\u9ed1\u4e86\uff0c\u624d\u6324\u51fa\u65f6\u95f4\u540c\u4e4c\u514b\u5170\u603b\u7edf\u3001\u54c8\u8428\u514b\u65af\u5766\u603b\u7406\u5b89\u6392\u4e86\u4e24\u573a\u4f1a\u89c1\u3002\uff08\u674e\u514b\u5f3a\u603b\u7406\u6b65\u5165\u4f1a\u573a\uff0c\u540c\u8bba\u575b\u56fd\u9645\u5de5\u5546\u7406\u4e8b\u4f1a\u4ee3\u8868\u5bf9\u8bdd\u3002\uff09","\u6b63\u5f53\u5927\u5bb6\u90fd\u51c6\u5907\u677e\u53e3\u6c14\u7684\u65f6\u5019\uff0c\u4f20\u6765\u6d88\u606f\uff0c\u585e\u5c14\u7ef4\u4e9a\u603b\u7406\u53c8\u5f3a\u70c8\u63d0\u51fa\u8981\u540c\u514b\u5f3a\u603b\u7406\u89c1\u4e00\u4e0b\u3002\u54b1\u4e0d\u662f\u521a\u53bb\u8fc7\u5417\uff1f\u90a3\u8fd8\u5f97\u89c1\u554a\uff01\u4f1a\u89c1\u5b8c\u4e00\u770b\u65f6\u95f4\u90fd\u665a\u4e0a8\u70b9\u4e86\u3002\uff08\u770b\u770b\u5bf9\u8bdd\u7684\u4ee3\u8868\u4eec\uff0c\u90fd\u662f\u5546\u754c\u7684\u8155\u513f\uff01\u662f\u4e0d\u662f\u6709\u4e2a\u8eab\u5f71\u5f88\u719f\u6089\uff1f\uff09","\u4e0e\u745e\u58eb\u8054\u90a6\u4e3b\u5e2d\u7d22\u9a6c\u9c81\u52a0\u4f1a\u8c08\u3002","\u674e\u514b\u5f3a\u603b\u7406\u5728\u8bba\u575b\u5168\u4f1a\u4e0a\u53d1\u8868\u7279\u522b\u81f4\u8f9e\u3002","\u4e0e\u4e4c\u514b\u5170\u603b\u7edf\u6ce2\u7f57\u7533\u79d1\u4f1a\u89c1\u3002","\u4e0e\u54c8\u8428\u514b\u65af\u5766\u603b\u7406\u4f1a\u89c1\uff0c\u8001\u670b\u53cb\u53c8\u89c1\u9762\u4e86\u3002","\u8fde\u8f74\u8f6c\u7684\u6d3b\u52a8\u5c31\u8fd9\u6837\u751f\u751f\u628a\u665a\u996d\u65f6\u95f4\u8d8a\u63a8\u8d8a\u8fdf\uff0c\u6700\u540e\u90fd\u5feb\u6324\u6ca1\u4e86\u3002\u6240\u6709\u4eba\u51e0\u4e4e\u662f\u4ee5\u98ce\u5377\u6b8b\u4e91\u7684\u901f\u5ea6\u5728\u5341\u5206\u949f\u5185\u628a\u665a\u996d\u6252\u62c9\u5b8c\uff0c\u8fc5\u901f\u8d76\u5f80\u8fbe\u6c83\u65af\u706b\u8f66\u7ad9\uff0c\u51b2\u4e0a\u4e13\u5217\uff0c\u5f00\u5f80\u82cf\u9ece\u4e16\uff0c\u660e\u5929\u8fd8\u6709\u522b\u7684\u65e5\u7a0b\u5462\u3002\u514b\u5f3a\u603b\u7406\u8d76\u5230\u82cf\u9ece\u4e16\u7684\u4e0b\u69bb\u9152\u5e97\u65f6\uff0c\u5df2\u7ecf\u662f\u5348\u591c12\u70b9\u534a\u4e86\u3002\r\n"]</script> 
+  <script>  
+      // 上一个图集的连接地址，如果没有，就不生成
+       var prevLocation = 'http://i.ifeng.com/news/pic/newspic/news?ch=uc_h5xw&vt=5&aid=95077625&mid=1u9Mkd';
+      // 下一个图集的连接地址，如果没有，就不要生成
+     var nextLocation = 'http://i.ifeng.com/news/pic/newspic/news?ch=uc_h5xw&vt=5&aid=95075753&mid=1u9Mkd';
+      // 评论的连接地址
+      var commentUrl = 'http://wap.ifeng.com/news.jsp?aid=95077451';
+      // 通用统计地址
+      var statUrl  = 'http://i.ifeng.com/news/pic/newspic/news?aid=95077451&ch=uc_h5xw&vt=5&aid=95077451&mid=4NwYxE&vt=5&mid=1u9Mkd&ch=uc_h5xw&vt=5&ou=';
+      var urlTongJi  = 'http://stadig.ifeng.com/wapsta?ref=http%3A%2F%2Fi.ifeng.com%2F%3Fvt%3D5%26mid%3D1u9Mkd&rand=942513586';
+      // 手凤自己的统计地址
+     var wapUrl = 'tj_slice?ch=uc_h5xw&vt=5&aid=95077451&mid=1u9Mkd';</script>
+    <script type="text/javascript" src="http://y0.ifengimg.com/ifengimcp/sta/20131211/sta_collection_4_touch_v2.3.js"></script>
+    <script type="text/javascript" src="http://y1.ifengimg.com/ifengimcp/sta/20131120/fm.js" ></script>
+   <!-- <script type="text/javascript" src="http://y0.ifengimg.com/a/2014/1209/ppt_v2.3.js" ></script>-->
+     <script type="text/javascript" src="http://y0.ifengimg.com/ifengimcp/sta/20131211/ppt_v2.2.js" ></script>
+      
+    
+  </body>
+</html><style type="text/css">
+.yd_page{ position:fixed; bottom:0; left:0; right:0; width:100%; height:197px; background:rgba(28,19,53,0.9); z-index:9999;}
+.yd_main{ }
+.yd_main img{ width:320px; height:135px; margin:auto; display:block;}
+.yd_link{ }
+.yd_link img{ width:200px; height:45px; display:block; margin:auto; }
+.yd_closed{ position:absolute; top:-15px; right:0;}
+.yd_closed img{ width:30px; height:30px; display:block;}
+</style>
+<div class="yd_page" id="yd_page" style=" display:none;">
+  <div class="yd_main"><img src="http://y0.ifengimg.com/ifengimcp/pic/20141020/f52e11f8dc7034dd2238_size29_w640_h270.png" /></div>
+  <div class="yd_link"><a id="ifengbreak" href="###"><img src="http://y3.ifengimg.com/ifengimcp/pic/20141020/fb2cc4c13e8f4d6e86f7_size3_w400_h90.png" /></a></div>
+  <div class="yd_closed" id="yd_closed"><img src="http://y1.ifengimg.com/ifengimcp/pic/20141020/381bf7b1450bf65cc729_size3_w60_h60.png" /></div>
+</div>
+<script type="text/javascript">
+var userAgent = navigator.userAgent.toLowerCase(),
+  android = userAgent.match(/(android)\s([\d\.]+)/i),
+  ios = userAgent.match(/(ipad|iphone|ipod\stouch);[\w\s]+(?:iphone|)\sos\s([\d_\.]+)/i),
+  os = {};
+
+function setCookie(c_name,value,expiredays){ 
+  var exdate=new Date() 
+  exdate.setDate(exdate.getDate()+expiredays) 
+  document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString()) 
+} 
+
+function getCookie(c_name){ 
+  if(document.cookie.length>0){ 
+    c_start=document.cookie.indexOf(c_name + "="); 
+    if(c_start!=-1){ 
+      c_start=c_start + c_name.length+1; 
+      c_end=document.cookie.indexOf(";",c_start);
+      if(c_end==-1) c_end=document.cookie.length;
+      return unescape(document.cookie.substring(c_start,c_end));
+    } 
+  } 
+  return "" 
+} 
+
+setCookie('wt_20141031', 70, 365);
+var wt_20141031 = getCookie('wt_20141031');
+var yd_page = document.getElementById('yd_page');
+var ifengbreak = document.getElementById('ifengbreak');
+var yd_closed = document.getElementById('yd_closed'); 
+
+ifengbreak.onclick = function(){
+  setCookie('fcookie_20141031',300,365);
+  yd_page.style.display='none';
+};
+yd_closed.onclick = function(){
+  setCookie('fcookie_20141031',300,365);
+  yd_page.style.display='none';
+};
+
+function ckIfeng(){
+  var fcookie_20141031 = getCookie('fcookie_20141031');
+  if(wt_20141031){
+    if(userAgent.indexOf('uc') > -1 || userAgent.indexOf('qq') > -1 || userAgent.indexOf('huawei') > -1 || userAgent.indexOf('coolpad') > -1){
+    
+    }else{ 
+    if(!fcookie_20141031) {
+      if (android) {
+      os.version = android[2];
+      if(parseFloat(os.version) >= 4.0){ 
+        yd_page.style.display='block';
+        //ifengbreak.setAttribute('href', 'http://dl.app.ifengcdn.com/ifengnews/201410/ifengnews_android_phone.git_Android_2.3_V4.3.2_5293.apk');
+        ifengbreak.setAttribute('href', 'http://api.3g.ifeng.com/ifengtg?adid=16984');
+      };
+      }
+      
+      if (ios) {
+      os.version = ios[2].replace(/_/g, '.');
+      if(parseFloat(os.version) >= 6.0){ 
+        yd_page.style.display='block';
+        //ifengbreak.setAttribute('href', 'http://itunes.apple.com/cn/app/id395133418?mt=8');
+        ifengbreak.setAttribute('href', 'http://api.3g.ifeng.com/ifengtg?adid=16984');
+      }
+      }
+    
+    }
+    }
+  }
+  
+}
+ckIfeng();
+
+</script>

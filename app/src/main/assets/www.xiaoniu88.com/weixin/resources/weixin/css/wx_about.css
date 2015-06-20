@@ -1,0 +1,10 @@
+.wx_top { margin-bottom:0; }
+/*about*/
+.wx_about_title { height:37px; line-height:37px; border-bottom:#e5e5e5 solid 1px; background:#f6f6f6; color:#666; padding:0 16px; }
+.wx_about,.wx_about_xnzb { color:#9c9c9c; line-height:24px; padding:15px 16px 0 16px; }
+.wx_about_xnzb { padding-bottom:80px; }
+.wx_about p,.wx_about_xnzb p { text-indent:28px;  font-size:12px; }
+
+.wx_about_contact { padding:15px 0px; margin-top:15px; border-top:#e5e5e5 solid 1px; border-bottom:#e5e5e5 solid 1px; }
+.wx_about_contact li { line-height:25px; color:#666; padding:0 16px; position:relative; font-size:12px; }
+.wx_about_contact li span { float:left; }

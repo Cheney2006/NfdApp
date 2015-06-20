@@ -1,0 +1,83 @@
+@charset "utf-8";
+.wx_top { margin-bottom:0; }
+
+/*产品页*/
+.wx_detail { padding-top:1px; }
+.wx_detail_info { padding:0; margin:0; border-bottom:#e5e5e5 solid 1px; }
+.wx_detail_info li { line-height:25px;  padding:0 21px; overflow:hidden;}
+.wx_detail_info li span { color:#9c9c9c; font-size:12px; margin-right:15px; }
+.wx_detail_info li span:last-child { padding-right:0; margin-right:0; }
+.wx_detail_info li em { color:#fa6b0d; padding-right:2px; }
+.wx_detail_info li.wx_detail_title { padding-top:12px; padding-bottom:8px; }
+.wx_detail_info li.wx_detail_title strong { float:left; color:#666;  font-size:14px; padding-left:0; padding-right:5px; }
+.wx_detail_info li.wx_detail_tip { height:auto; line-height:normal; }
+.wx_detail_info li.wx_flex_btw span { margin:0; }
+
+.wx_detail_info li.wx_detail_num { padding-top:5px; }
+.wx_detail_info li strong { font-size:16px; color:#666; padding-left:5px; }
+.wx_detail_info li strong i { font-size:12px; padding:0 0 0 2px; }
+.wx_detail_info li span.wx_detail_account em { padding:0 5px; font-size:16px; position:relative; top:1px; }
+.wx_detail_info li.wx_detail_invest { padding-top:10px; padding-bottom:10px; }
+.wx_detail_info li.wx_detail_countdown { padding-top:10px; padding-bottom:10px;  }
+.wx_detail_info li.wx_detail_countdown span { text-align:center; font-size:18px; color:#ff864a; display:block; }
+
+.wx_detail_info li.wx_half span { display:block; width:50%; float:left; overflow:hidden; margin:0; }
+
+.wx_detail_btn { padding-right:120px; height:50px; overflow:hidden; position:relative; }
+.wx_detail_btn input { height:48px; border:#999 solid 2px; width:100%; padding-left:10px; padding-right:25px; box-sizing:border-box;-webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.wx_detail_btn input:focus { border-color:#cca247; }
+.wx_detail_btn input.error { border-color:#F00; color:#F00; }
+.wx_detail_btn label { position:absolute; right:130px; top:11px; color:#dfdfdf; }
+.wx_detail_btn p { float:right; width:115px; position:relative; right:-120px; top:-48px; color:#dfdfdf; }
+.wx_detail_nologin { height:48px; line-height:48px; width:100%; text-align:center; color:#ff864a; }
+
+/*完成状态*/
+.wx_detail_info li.wx_detail_complete { height:75px; line-height:75px; color:#d4d4d4; font-size:20px; background:#f5f5f5; margin-bottom:1px; margin-top:10px; }
+.wx_detail_info li.wx_detail_complete span { float:right; line-height:22px; text-align:right; padding-top:17px; margin-right:0; color:#9c9c9c; }
+.wx_detail_info li.wx_detail_complete span i { color:#cda148; }
+
+/*产品详述*/
+.wx_detail_content { padding-bottom:70px; }
+.wx_detail_content ul {}
+.wx_detail_content ul li { padding:16px 21px 30px 21px; border-bottom:#e5e5e5 solid 1px; }
+.wx_detail_content ul li:last-child { border-bottom:none; }
+.wx_detail_content ul li h4 { color:#3e3e3e; font-size:12px; padding:0; margin:0; padding-bottom:9px; font-weight:bold; }
+.wx_detail_text { color:#9c9c9c; line-height:22px; font-size:12px; }
+.wx_detail_text p { word-break:break-all; word-wrap:break-word; }
+
+/*资质认证表*/
+.wx_detail_table { border:#e5e5e5 solid 1px; width:100%; }
+.wx_detail_table dt { background:#f6f6f6; font-size:12px; height:30px; line-height:30px; position:relative;}
+.wx_detail_table dt span { display:block; float:left; width:50%; text-align:center; color:#666; }
+.wx_detail_table dt span:nth-child(2n),
+.wx_detail_table dd span:nth-child(2n) { border-left:#e5e5e5 solid 1px; position:absolute; left:50%; top:0; }
+.wx_detail_table dd { border-top:#e5e5e5 solid 1px; height:45px; line-height:45px; position:relative; }
+.wx_detail_table dd span { padding-left:10px;  float:left;  width:50%; color:#9c9c9c; }
+.wx_detail_table dd span.wx_auth_ok { color:#82c72d; }
+
+/*交易记录*/
+.wx_trade_record { padding-bottom:70px; display:none; }
+.wx_trade_record ul { border-bottom:#e5e5e5 solid 1px; }
+.wx_trade_record ul li { height:35px; line-height:35px;padding:5px 21px; color:#9c9c9c; border-bottom:#e5e5e5 solid 1px; font-size:12px; }
+.wx_trade_record ul li strong { color:#3e3e3e; }
+.wx_trade_record ul li span { float:right; line-height:18px; text-align:right; }
+.wx_trade_record ul li span i { color:#cda148; padding-right:3px; }
+.wx_trade_record ul li.more { text-align:center; color:#666; }
+
+/*查看原始借贷情况*/
+.wx_detail_link { border-top:#e5e5e5 solid 1px; border-bottom:#e5e5e5 solid 1px; color:#5ca3e1; text-decoration:none; display:block; height:40px; line-height:40px; width:100%; }
+.wx_detail_link span {  padding:0 21px; }
+
+
+
+/*大于350时宽度时，加大列表元素的间隔*/
+@media all and (min-width:350px) {
+	.wx_detail_info p span { padding-right:20px; }
+	.wx_detail_info p.wx_detail_axn span { padding-right:12px; }
+}
+@media all and (max-width:330px) {
+	.wx_detail_info li,
+	.wx_detail_content ul li,
+	.wx_list_tab { padding-left:13px; padding-right:13px; }
+	
+}

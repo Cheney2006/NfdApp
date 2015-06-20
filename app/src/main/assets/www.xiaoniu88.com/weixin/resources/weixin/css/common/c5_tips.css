@@ -1,0 +1,46 @@
+/*提示*/
+.wx_tip {
+	border: #f00 solid 1px;
+	background: #fff9e3;
+	padding: 12px 8px;
+	margin-top: 10px;
+	color: #f00;
+	font-size: 12px;
+}
+.wx_tip h5 {
+	color: #ff864a;
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+.wx_tip ins {
+	display: block;
+	width: 100%;
+}
+.wx_tip p {
+	line-height: 22px;
+	color: #666;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.wx_tip p strong {
+	color: #666;
+	font-size: 12px;
+}
+.wx_tip p em.red {
+	color: #ff864a;
+	font-weight: normal;
+	line-height: 22px;
+	padding: 0;
+	margin: 0;
+}
+.wx_tip2 {
+	border: #e0af48 solid 1px;
+	background: #fff9e3;
+	padding: 12px 8px;
+	margin-top: 10px;
+	color: #ff864a;
+	font-size: 12px;
+}
+.wx_tip2 span.black {
+	color: #666;
+}

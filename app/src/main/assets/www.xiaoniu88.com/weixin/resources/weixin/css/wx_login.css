@@ -1,0 +1,294 @@
+@charset "utf-8";
+.wx_login_box{
+	margin-left:8%;
+	margin-right:8%;
+}
+.input_box{
+	border:none;
+	width:100%;
+	margin-bottom:27px;
+	height:45px;
+}
+.input_box input{
+	padding-left:48px;
+}
+.input_box input.phoneCode{
+	padding-left:12px;
+}
+
+.input_box.only1{
+	margin-bottom:14px;
+}
+
+input{
+	font-size:14px;
+	line-height:normal;
+	outline:none;
+}
+
+.wx_login_check_code{
+	position:relative;
+	margin-right:122px;
+	height:45px;
+	line-height:45px;
+	
+}
+.wx_login_check_code input{
+	width:100%;
+	box-sizing:border-box;
+	padding-left:12px;
+}
+
+.wx_login_check_code .vcode{
+	position:absolute;
+	right:-122px;
+	top:0px;
+}
+
+
+.wx_icon_user{
+	background-image:url(../img/wx_login/wx_icon_user.png);
+
+}
+.wx_icon_user:focus{
+	background-image:url(../img/wx_login/wx_icon_user_yellow.png);
+}
+
+.wx_icon_pw{
+	background-image:url(../img/wx_login/wx_icon_pw.png);
+
+}
+.wx_icon_pw:focus{
+	background-image:url(../img/wx_login/wx_icon_pw_yellow.png);
+}
+
+.wx_login_check_code{
+}
+
+input{
+	width:100%;
+	background-color:transparent;
+	box-sizing:border-box;
+	height:45px;
+	line-height:45px;
+	outline:none;
+	border:2px solid #999;
+	background-repeat:no-repeat;
+	background-position:18px center;
+	background-size:20px 20px;
+}
+input:focus{
+	border-color: #cca247;
+}
+
+input::-webkit-input-placeholder{
+    color: #dfdfdf;
+	font-size:14px;
+	-webkit-appearance:none;
+	appearance:none;
+}
+
+input:focus::-webkit-input-placeholder{
+    color: #e3d2af;
+}
+
+a.wx_btn_orange.wx_nextStep{
+	margin-top:16px;
+}
+#s_usrnm.show~a.wx_btn_orange.wx_nextStep{
+	margin-top:28px;
+}
+
+a.wx_btn_orange{
+	text-decoration:none;
+	width:100%;
+	display:block;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	background-color:#fe8748;
+	font-size:20px;
+	letter-spacing:2px;
+	color:#fff;
+	margin-top:22px;
+}
+a.wx_btn_orange:hover{
+	text-decoration:none;
+}
+
+
+.btn_cc{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	background-color: #ff864a;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	margin: 30px 0px 10px;
+	cursor: pointer;
+}
+a.fpwd {
+	color:#ffbea1;
+	text-decoration: none;
+	text-align: left;
+	float:left;
+}
+a:visited {
+	text-decoration: none;
+}
+
+.wx_reg_now{
+	color:#5ba3de;
+}
+
+
+.xn_login_blow{
+	overflow:auto;
+	margin-top:20px;
+}
+
+.xn_noAccount{
+	float:right;
+}
+
+
+#error-box{
+	display:none;
+	margin-top:12px;
+}
+.err{
+	color:red;
+}
+
+
+#s_usrnm2{
+	display:none;
+	color:#ff864a;
+}
+#s_usrnm2.show{
+	display:block;
+	height:36px;
+	line-height:36px;
+	border:1px solid #E0B047;
+	color:#ff864a;
+	margin-bottom:15px;
+	margin-top:14px;
+	padding-left:13px;
+}
+#s_usrnm3.show{
+	display:block;
+	height:36px;
+	line-height:36px;
+	border:1px solid #E0B047;
+	color:#ff864a;
+	margin-top:14px;
+	padding-left:13px;
+}
+
+h1.wx_title{
+	text-align:center;
+	font-weight:normal;
+	font-size:14px;
+	color:#ccA448;
+	margin-top:-6px;
+	margin-bottom:15px;
+}
+
+
+
+/*验证身份部分*/
+.wx_row{
+	font-size:12px;
+	line-height:30px;
+	height:30px;
+	margin:6px 0px;
+}
+.wx_row_c1{
+	color:#9c9c9c;
+	display:inline-block;
+	width:66px;
+}
+
+.wx_row_c2{
+	color:#9c9c9c;
+	display:inline-block;
+	width:66px;
+}
+
+
+.wx_row_c3{
+	float:right;
+	width:115px;
+	background-color:#F7AE48;
+	color:#fefefe;
+	display:inline-block;
+	height:100%;
+	text-align:center;
+}
+.wx_row_c3_disabled { background-color:#c5c5c5; }
+
+.wx_row_c3 i{
+	font-style:normal;
+	margin-left:5px;
+	display:none;
+}
+
+.wx_tips{
+	height:36px;
+	line-height:36px;
+	border:1px solid #E0B047;
+	color:#9c9c97;
+	margin-bottom:15px;
+	margin-top:14px;
+	padding-left:13px;
+	display:none;
+}
+.wx_tips.show{
+	display:block;
+}
+.wx_tips.hide~.input_box{
+	margin-top:18px;
+}
+
+.wx_tips2{
+	height:36px;
+	line-height:36px;
+	border:1px solid #E0B047;
+	color:#ff864a;
+	margin-bottom:12px;
+	margin-top:-18px;
+	padding-left:13px;
+	font-size:12px;
+}
+.wx_tips3{
+	height:36px;
+	line-height:36px;
+	border:1px solid #E0B047;
+	color:#ff864a;
+	margin-bottom:12px;
+	margin-top:-18px;
+	padding-left:13px;
+	font-size:12px;
+	display:none;
+}
+.wx_tips3.show{
+	display:block;
+}
+/*更改密码成功的提示框*/
+.wx_succ{
+	text-align:center;
+	height:64px;
+	line-height:64px;
+}
+.wx_succ span{
+	display:inline-block;
+	
+	height:64px;
+	line-height:64px;
+	padding-left:36px;
+	background-image:url(../img/wx_login/wx_icon_succ.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+}

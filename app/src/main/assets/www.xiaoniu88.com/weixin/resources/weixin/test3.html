@@ -1,0 +1,413 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style type="text/css">
+html { margin: 0; height: 100%; }
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Microsoft YaHei",SimHei,helvetica,arial,verdana,tahoma,sans-serif;
+}
+h1, h2, p, textarea, form {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.bg {
+  background: url(http://s2.mimg.ifeng.com/upload/day_131031/201310311622423447_size4_w100_h100_iifeng.png);
+  background-size: 50px 50px;
+}
+.icon {
+  background: url(http://y0.ifengimg.com/ifengimcp/pic/20140813/585e450ef873483c6b44_size31_w640_h640.png) no-repeat;
+  background-size: 320px 320px;
+  font: 0px/0px a;
+}
+.icon em {
+  visibility: hidden;
+}
+
+.icon24 {
+  width: 12px;
+  height: 10px;
+  display: block;  
+}
+
+.icon34 {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+}
+
+.anim {
+
+/*
+  -webkit-transition: 0.3s;
+*/
+  -webkit-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.assist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* top */
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  border-bottom: 1px solid #bebebe;
+  z-index: 100;
+  -moz-box-shadow: 0px 2px 3px #FFF inset, 0px 1px 2px #afafaf;
+  -webkit-box-shadow: 0px 2px 3px #FFF inset, 0px 1px 2px #afafaf;
+  box-shadow: 0px 2px 3px #FFF inset, 0px 1px 2px #afafaf;        
+
+}
+.top .app {
+  float: right;
+  height: 44px;
+  width: 137px;
+}
+.top nav button {
+  width: 45px;
+  height: 44px;
+  border-right:1px solid #bdbdbd;
+  -moz-box-shadow: 1px 0 0 #fff;
+  -webkit-box-shadow: 1px 0 0 #fff;
+  box-shadow: 1px 0 0 #fff;        
+  margin-right: 1px;
+}
+.top .home {
+  background-position: -0px -50px;
+}
+.top .share {
+  background-position: -50px -50px;
+}
+.top .share_active {
+  background-position: -100px -50px;
+}
+
+/* pic */
+.pic_box {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  white-space:nowrap;
+}
+
+.pic_slider {
+/*
+  -webkit-transform: translate3d(-200%,0,0);
+*/
+  font: 0px/0px a;
+  height: 100%;
+}
+.pic_slider div{
+  background: no-repeat center;
+  background-image: url(http://s1.mimg.ifeng.com/upload/day_131031/201310311623218964_size10_w320_h90_iifeng.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: block;
+  float: left;
+}
+
+.pic_slider div img {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.testBox {
+
+}
+/* content */
+.content_box {
+  position: relative;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin-top: -85px;
+  padding: 0 23px;
+  background-color: rgba(255, 255, 255, .5);
+  padding-bottom: 44px;    
+}
+
+.content_box header {
+  padding: 20px 0 8px 0;
+/*
+  text-align: center;
+*/
+}
+
+.content_box h1 {
+  display: inline-block;
+  font-size: 14px;
+  color: #2c2c2c;
+  padding-right: 3px;
+}
+
+.content_box header span {
+  font-size: 12px;
+  color: #2C2C2C;
+/*
+  font-weight: bold;
+*/
+}
+
+.content_box p {
+  font-size: 12px;
+  color: #5d5d5d;
+  line-height: 20px;
+}
+
+/* comment */
+.comment_box .comment_inner {
+  background-position: 0 -20px;
+}
+
+.comment_box .comment_input_box {
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 9px 10px 0 10px;
+}
+
+.comment_box .comment_input {
+  width: 100%;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 0;
+  font-size: 14px;
+  padding-top: 7px;
+  padding-left: 7px;
+  color: #7f7f7f;
+  background-color: #f4f4f4;
+  -moz-box-shadow: 1px 1px 2px #afafaf inset;
+  -webkit-box-shadow:1px 1px 2px #afafaf inset;
+  box-shadow: 1px 1px 2px #afafaf inset;        
+}
+
+.mini_comment {
+/*
+  margin-top: 30px;
+*/
+}
+
+.mini_comment .comment_shadow {
+  height: 4px;
+  background: url(http://s0.mimg.ifeng.com/upload/day_131031/201310311623419976_size2_w640_h8_iifeng.png) no-repeat center, top;
+  background-size: 100% 100%; 
+}
+
+.mini_comment .comment_toolbar {
+  display: none;
+}
+
+.mini_comment .comment_input_box {
+  overflow: hidden;
+  height: 44px;
+}
+.mini_comment .comment_count {
+  float: right;
+  width: 54px;
+  height: 44px;
+  text-align: center;
+  font-size: 12px;
+  color: #2C2C2C;
+  border-left: 1px solid #FFF;
+  -moz-box-shadow: -1px 0 0 #bdbdbd;
+  -webkit-box-shadow:-1px 0 0 #bdbdbd;
+  box-shadow: -1px 0 0 #bdbdbd;        
+}
+
+.mini_comment .comment_count .icon24 {
+  background-position: -175px -75px;
+  margin: 13px auto 2px auto;
+}
+
+.mini_comment .comment_input {
+  height: 28px;
+}
+
+.full_comment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+.full_comment .comment_shadow {
+  display: none;
+}
+
+.full_comment .comment_inner {
+  min-height: 800px;
+}
+
+.full_comment .comment_toolbar {
+  height: 41px;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  overflow: hidden;
+  padding: 16px 13px 0px 13px;
+}
+
+.comment_box button {
+  font-size: 17px;
+  color: #868686;
+}
+
+.comment_box button strong {
+  display: inline-block;
+  height: 17px;
+  margin-left: 3px;
+}
+
+.comment_toolbar h2 {
+  text-align: center;
+  font-size: 18px;
+}
+.comment_submit {
+  float: right;
+}
+.comment_submit .icon34 {
+  background-position: -225px -73px;
+}
+.comment_close {
+  float: left;
+}
+.comment_close .icon34 {
+  background-position: -200px -72px;
+}
+
+.full_comment .comment_count {
+  display: none;
+}
+
+.full_comment .comment_input_box {
+  padding-top: 0;
+}
+
+.full_comment .comment_input {
+  height: 139px;
+}
+
+/* share */
+.share_box {
+  position: absolute;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  top: 44px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  height: 77px;
+  padding-top: 10px;
+  z-index: 50;
+  text-align: center;        
+}
+
+.share_box button {
+  display: inline-block;
+  width: 50px;
+  height: 57px;
+  margin-right: 46px;
+}
+
+.share_box .share-btn1 {
+  background-position: -150px 0;
+}
+.share_box .share-btn2 {
+  background-position: -200px 0;
+}
+.share_box .share-btn3 {
+  background-position: -250px 0;
+  margin-right: 0;
+}
+
+.mini_viewport .share_box, .share_box {
+  opacity: 0;
+  -webkit-transform: translate3d(0,-121px,0);
+  -ms-transform: translate3d(0,-121px,0);
+  -moz-transform: translate3d(0,-121px,0);
+  -o-transform: translate3d(0,-121px,0);
+  transform: translate3d(0,-121px,0);
+}
+
+.share_box_show {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.mini_viewport .top {
+  opacity: 0;
+  -webkit-transform: translate3d(0,-44px,0);
+  -ms-transform: translate3d(0,-44px,0);
+  -moz-transform: translate3d(0,-44px,0);
+  -o-transform: translate3d(0,-44px,0);
+  transform: translate3d(0,-44px,0);
+}
+
+.mini_viewport .content_box {
+  margin-top: -45px;
+}
+
+    </style>
+    <title>咱李克强总理在达沃斯就是这样淡定！</title>
+  <body>
+      <!-- 幻灯片列表 注意div直接不要换行和有空格 begin-->
+    <section class="pic_box" id="pic_box" style="width: 391px; height: 782px;">
+      <div class="pic_slider" id="pic_slider" style="width: 3519px; transform: translate3d(0px, 0px, 0px);">
+                          
+                        </div>
+    </section>
+<!-- 幻灯片列表 end-->
+   <section class="content_box anim" id="content_box">
+      <header>
+        <h1>咱李克强总理在达沃斯就是这样淡定！</h1>
+        <span id="content_index" style="color: rgb(44, 44, 45);">[1/9]</span>
+      </header>
+      <p id="content_info" style="color: rgb(93, 93, 92);">当你即将面对近千名政界大佬、商界大腕儿和学界名人发表演讲，当你即将接受上百家知名跨国企业掌门人的提问，你会怎么办？反复背诵演讲词，还是一遍遍念叨准备好的答案？咱总理的选择是，登高望远！
+一小时后，他就要同世界经济论坛国际工商理事会的上百名代表们对话，按照以往惯例，代表们还会提出各种各样的问题。可总理居然从自己下榻的酒店出去登高望远去了！一位常年随他出行的记者说，从来没见总理这样“偷得浮生半刻闲”。</p>
+  </section>
+
+</body></html>

@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*bonus 我的红包相关样式*/
+.bonus{
+	margin-bottom:12px;
+	background-color:#fff;
+
+}
+.bonus .bonus_top{
+	background-color:#fff;
+	height:82px;
+	color:#333;
+	padding-left:96px;
+	position:relative;
+}
+.bonus .bonus_img{
+	position:absolute;
+	top:0px;
+	left:8px;
+	width:80px;
+	height:80px;
+	line-height:100px;
+	text-align:center;
+	color:#fff000;
+
+	color:#e65737;
+	color:#fff;
+	font-size:24px;
+	font-weight:bold;
+	background-image:url(../img/bonus/redbag_bg3.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:80px 80px;
+}
+
+
+
+.bonus .bonus_amt{
+	padding-top:6px;
+	padding-right:12px;
+	font-size:24px;
+	line-height:36px;
+	font-weight:bold;
+	text-align:left;
+}
+
+
+
+.bonus .bonus_bottom{
+	color:#666;
+	line-height:20px;
+	border-top:1px solid #ccc;
+	padding: 10px 12px;
+	display:none;
+}
+
+.bonus_info{
+	padding-top:16px;
+	font-size:16px;
+	padding-bottom:16px;
+}
+.bonus_info1{
+	padding-top:12px;
+	font-size:14px;
+	padding-bottom:4px;
+}
+.bonus_invest{
+	line-height:16px;
+	padding-bottom:2px;
+}
+
+.bonus .bonus_experis{
+	color:#9c9c9c
+}
+.bonus .bonus_extra{
+	position:absolute;
+	top:54px;
+	right:12px;
+	color:#2d81fe;
+}
+
+.bonus_used.bonus .bonus_img{
+	background-image:url(../img/bonus/redbag_bg3_gray.png);
+	color:#dedede;
+}
+
+
+.my_bonus_num{
+	display:inline-block;
+	background-color:#F00;
+	color:#FFF;
+	width:20px;
+	text-align:center;
+	line-height:20px;
+	font-size:12px;
+	border-radius:20px;
+	margin-left:8px;
+}
+.my-card{
+	height:20px;
+	overflow:hidden;
+}

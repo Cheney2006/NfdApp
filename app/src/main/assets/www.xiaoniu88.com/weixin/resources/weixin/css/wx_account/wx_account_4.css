@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*我的银行卡*/
+.wx_bank_info { border-bottom:#e5e5e5 solid 1px; }
+.wx_bank_quick,.wx_bank_recharge { padding:20px; }
+.wx_bank_faq { padding-top:20px; color:#666; font-size:12px; }
+.wx_bank_faq dt { font-weight:bold; line-height:25px; }
+.wx_bank_faq dd { line-height:22px; margin-bottom:10px; }
+.wx_bank_nobind { padding:55px 20px; text-align:center; }
+.wx_bank_nobind h3 { font-size:18px; color:#9c9c9c; margin-bottom:15px; }
+.wx_bank_nobind p { color:#666; font-size:12px; }
+.wx_bank_nobind p span.yellow { color:#cda148; }

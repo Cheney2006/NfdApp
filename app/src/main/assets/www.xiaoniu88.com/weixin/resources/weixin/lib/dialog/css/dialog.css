@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*dialog*/
+.dialog-loading { padding-top:20px; height:50px; width:100%; background:url(../img/dialog_loading.gif) center center no-repeat; }
+.dialog { width:240px; position:fixed; left:50%; top:50%; margin-left:-120px; z-index:9999; padding:6px; background:rgba(0,0,0,0.4); background: transparent\9; zoom:1\8; -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); overflow:hidden; }
+.dialog-wrap { width:100%; height:100%; background:#fff; }
+.dialog-title { height:36px; line-height:36px; background:#cfa74a; padding-left:12px; color:#fff; font-size:12px; position:relative; text-align:left; }
+.dialog-title-close { display:block; width:36px; height:36px; position:absolute; right:0; top:0; }
+.dialog-title-close i { display:block; background:url(../img/dialog_icon.png) left -32px no-repeat; background-size:124px 48px; width:15px; height:15px; margin:9px 0 0 12px; }
+.dialog-content { margin:0 25px; padding:25px 0; position:relative; }
+.dialog-content i { display:block; width:30px; height:30px; position:absolute; left:0; top:50%; margin-top:-15px; }
+.dialog-content i.dialog-alert-icon { background:url(../img/dialog_icon.png) left top no-repeat; background-size:124px 48px;  }
+.dialog-content i.dialog-error-icon { background:url(../img/dialog_icon.png) -31px top no-repeat; background-size:124px 48px; }
+.dialog-content i.dialog-success-icon { background:url(../img/dialog_icon.png) -62px top no-repeat; background-size:124px 48px; }
+.dialog-content i.dialog-fail-icon { background:url(../img/dialog_icon.png) -94px top no-repeat; background-size:124px 48px; }
+.dialog-content p { font-size:14px; line-height:24px; color:#666; margin-left:40px;}
+.dialog-content p .yellow { color:#ff864a; }
+.dialog-alert-content .dialog-content p { }
+.dialog-confirm { padding:0; background:#fff; text-align:center; }
+.dialog-confirm span { height:30px; line-height:30px; display:inline-block; width:50%; }
+.dialog-confirm span a { display:block; width:80%; margin:0 auto; text-align:center; color:#fff; }
+.dialog-confirm-cancel {  background:#aaa; }
+.dialog-confirm-OK {  background:#cfa74a; } 
+.dialog-confirm .dialog-content { color:#666; line-height:30px; }
+.dialog-mask { position:fixed; left:0; top:0; z-index:999; background-color:#000; opacity:0.5; }
+/*按钮*/
+.dialog-btn { padding:0 20px 20px 20px; background:#fff; text-align:center; display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-flex-flow: row wrap;flex-flow: row wrap;-webkit-box-pack: center;-moz-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;}
+.dialog-btn a { display:block; width:44%; }
+.dialog-btn a:nth-child(1){ margin-right:10px; }
+.dialog-btn a:nth-child(2){ margin-left:10px; }
+.dialog-btn a.dialog-btn-ok { height:40px; line-height:40px; background:#ff864a; color:#fff; font-size:14px; text-align:center; display:block; }
+.dialog-btn a.dialog-btn-cancel { height:40px; line-height:40px; background:#ccc; color:#fff; font-size:14px; text-align:center; display:block; }
+.dialog-btn a.dialog-btn-single { width:100%; margin:0; }
+/*成功*/
+.dialog-success { padding:10px 0; }
+
+/*文字居中*/
+.dialog-center .dialog-content { padding:40px 0; display: block;text-align: center;color: #cda148; display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-flex-flow: row wrap;flex-flow: row wrap;-webkit-box-pack: center;-moz-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center; }
+.dialog-center .dialog-content i { position:relative; left:0; top:12px; }
+.dialog-center .dialog-content p { margin-left:10px; }
+
+/*银行卡列表*/
+.dialog-bank { }
+.dialog-bank .dialog-content { padding:0; margin:0; }
+.dialog-bank .dialog-title-close { display:block; width:60px; height:23px; line-height:23px; position:absolute; right:5px; top:6px; border-radius:3px; text-align:center; border:#fff solid 1px; color:#fff; text-decoration:none; }
+.dialog-bank ul li { height:30px; line-height:30px; border-bottom:#e5e5e5 solid 1px; }
+
+
+
+
+
+

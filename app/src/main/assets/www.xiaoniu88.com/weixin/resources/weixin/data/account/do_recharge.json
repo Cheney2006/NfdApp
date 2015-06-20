@@ -1,0 +1,15 @@
+{
+	"responseType": "-2",
+	"userId": null,
+	"bankType": null,
+	"bankTypeName": null,
+	"bankCardNo": null,
+	"status": 0,
+	"balance": null,
+	"data": {
+		"bankcard_bind": true,
+	},
+	"status": 555,
+	"errorCode": null,
+	"errorDetails": null
+}

@@ -1,0 +1,13 @@
+/*新手*/
+.wx_icon_new {
+	background: url(../../img/wx_list/wx_invest_new.png) right top no-repeat;
+	background-size: 45px 45px;
+}
+.wx_icon_vip {
+	background: url(../../img/wx_list/wx_invest_vip.png) right top no-repeat;
+	background-size: 45px 45px;
+}
+.wx_icon_weixin {
+	background: url(../../img/wx_list/wx_invest_weixin.png) right top no-repeat;
+	background-size: 45px 45px;
+}

@@ -1,0 +1,137 @@
+/* CSS Document */
+
+.a11 {
+	min-height: 633px;
+	height: 633px;
+	background-image: url(../img/pc_reg/pc_reg_succ_bg.jpg);
+	background-position: center bottom;
+	background-color: #ccc;
+	text-align: center;
+}
+.b11 {
+	width: 1024px;
+	position: relative;
+	margin: 0 auto;
+	min-height: 100px;
+	height: 100%;
+/*	background-color: rgba(0,0,0,0.1);
+*/}
+.b111 {
+	position: absolute;
+	z-index: 1;
+	background-image: url(../img/pc_reg/reg_bonus_bg.png);
+	background-repeat: no-repeat;
+	width: 270px;
+	height: 371px;
+	left: 177px;
+	top: 69px;
+}
+.b112 {
+	position: absolute;
+	z-index: 2;
+	background-image: url(../img/pc_reg/reg_succ_rec.png);
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	width: 270px;
+	height: 371px;
+	left: 607px;
+	top: 172px;
+}
+.b113 {
+	position: absolute;
+	z-index: 3;
+	left: 183px;
+	top: 240px;
+	color: #fff;
+	font-size: 15px;
+	width: 256px;
+	text-align: center;
+}
+.b114 {
+	position: absolute;
+	z-index: 3;
+	left: 183px;
+	top: 285px;
+	font-size: 30px;
+	color: #fff;
+	width: 256px;
+	text-align: center;
+}
+.b114 i {
+	font-size: 46px;
+	font-style: normal;
+	font-weight: bold;
+	color: #fff600;
+}
+.b115 {
+	position: absolute;
+	z-index: 3;
+	left: 600px;
+	width: 240px;
+	text-align: center;
+	top: 109px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #444444;
+}
+.b116 {
+	position: absolute;
+	z-index: 3;
+	left: 600px;
+	width: 240px;
+	text-align: center;
+	top: 159px;
+	font-size: 14px;
+	color: #a9a9a9;
+}
+.b117 {
+	position: absolute;
+	z-index: 3;
+	left: 624px;
+	top: 288px;
+	color: #424242;
+	font-size: 15px;
+}
+.b117 i {
+	font-size: 32px;
+	font-style:normal;
+}
+.b118 {
+	position: absolute;
+	z-index: 3;
+	left: 798px;
+	top: 288px;
+	color: #424242;
+	font-size: 32px;
+	font-style:normal;
+}
+.b119 {
+	position: absolute;
+	z-index: 3;
+	left: 617px;
+	top: 363px;
+	height:48px;
+	width:214px;
+	line-height:48px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+}
+.b110 {
+	position: absolute;
+	z-index: 3;
+	left: 640px;
+	top: 430px;
+	color:#007eff;
+	font-size:13px;
+	text-decoration:none;
+}
+.b110 a{
+	text-decoration:none;
+	color:#007eff;
+	font-size:13px;
+
+}
+.b110 a:link,.b110 a:visited,.b110 a:hover,.b110 a:active{
+	text-decoration:none;
+}

@@ -1,0 +1,967 @@
+@charset "utf-8";
+
+
+.ws-flipsnap a{
+	display:inline-block;
+	position:relative;
+}
+
+
+#nfd-user-reg-form-c{/*注册表单 底部增加部分留白*/
+	padding-bottom:20px;
+}
+
+.login-c{
+	padding-bottom:20px!important;/*登录按钮 底部增加部分留白*/
+}
+
+.profit{
+	display:none!important;/*项目详情中  不展示项目信息*/
+}
+
+#nfd-channel-banks{/*绑定银行卡*/
+	padding-top:12px!important;
+}
+
+#nfd-channel-banks .btn-primary{
+	margin-top:12px!important;
+}
+
+#nfd-register-completed{
+	margin-top:0px!important;
+	padding-top:24px!important;
+
+}
+
+#nfd-operate-completed{
+	margin-top:0px!important;
+	padding-top:12px!important;
+	margin-left:0px!important;
+	margin-right:0px!important;
+}
+
+#nfd-operate-completed .done{
+	font-size:18px;
+	color:#444444;
+	font-weight:bold;
+	margin-bottom:12px;
+}
+
+.reg_bonus_con .n{
+	position:absolute;
+	display:none;
+}
+
+.reg_bonus_con .n1{
+	display:block;
+	left:100px;
+	width:120px;
+	text-align:center;
+	top:30px;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+}
+.reg_bonus_con .n2{
+	display:block;
+	left:100px;
+	width:120px;
+	text-align:center;
+	top:46px;
+	color:#fff;
+	font-size:14px;
+}
+.reg_bonus_con .n2 i{
+	font-style:normal;
+	font-weight:bold;
+	font-size:30px;
+	color:#fff600;
+}
+.reg_bonus_con2 .n1{
+	top:24px;
+}
+.reg_bonus_con2 .n2{
+	top:38px;
+}
+.reg_bonus_con2 .n7{
+	display:block;
+	left:90px;
+	width:150px;
+	text-align:center;
+	top:78px;
+	color:#ffc600;
+	font-size:12px;
+}
+
+.reg_bonus_con .n3{
+	display:block;
+	left:82px;
+	top:242px;
+	color:#fff;
+	font-size:12px;
+}
+
+
+
+.reg_bonus_con .n3 i{
+	font-style:normal;
+	font-size:16px;
+}
+.reg_bonus_con .n4{
+	display:block;
+	left:208px;
+	top:242px;
+	color:#fff;
+	font-size:16px;
+}
+.reg_bonus_con .n5{
+	display:block;
+	left:96px;
+	top:286px;
+	height:39px;
+	text-align:center;
+	color:#e50100;
+	font-size:13px;
+}
+.reg_bonus_con .n5 a{
+	color:#e50100;
+}
+
+.reg_bonus_con .n6{
+	display:block;
+	left:96px;
+	width:120px;
+	top:320px;
+	height:39px;
+	text-align:center;
+	color:#910903;
+	font-size:12px;
+}
+.reg_bonus_con .n6 a{
+	color:#910903;
+}
+.reg_bonus_con .n6 a:link,.reg_bonus_con .n6 a:visited,.reg_bonus_con .n6 a:hover,.reg_bonus_con .n6 a:active{
+	color:#910903;
+}
+
+
+#nfd-operate-completed .info{
+	min-height:40px!important;
+	margin-bottom:36px;
+}
+#nfd-operate-completed .btn-block {
+	position:relative!important;
+}
+
+#nfd-investments .invest-project .title{
+	padding:17px 0 10px
+}
+#nfd-investments .InSubscribe .title{
+	margin: 0 10px;
+}
+
+#nfd-investments .info{
+	padding:12px 6px 17px;
+}
+#nfd-investments .money{
+	font-size:14px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+#nfd-investments .info .font_black{
+	font-size:14px;
+	color:#444;
+}
+
+.align_center{
+	text-align:center;
+}
+.align_right{
+	text-align:right;
+}
+
+
+#nfd-mobile-code.wait {
+	background-color: #666!important;
+	color: #eee!important;
+	cursor: none!important;
+}
+
+#nfd-projects.InSubscribe{
+	padding:10px 0px!important;
+}
+#nfd-projects.InSubscribe .project{
+	padding:10px 0px;
+}
+
+.uninvested .prompt{/*尚没有交易明细*/
+	height:60px;
+	line-height:60px;
+	text-align:center;
+}
+
+#scroller{
+/*	padding-top:45px;
+	padding-bottom:50px;
+	position:relative;
+	z-index:1;*/
+/*	background-color:rgba(255,0,0,0.5);
+*/}
+#nfd-touch{
+	padding-top:60px!important;
+	padding-bottom:50px!important;
+	position:relative;
+	z-index:1;
+/*	background-color:rgba(255,0,0,0.5);
+*/}
+
+#nfd-footer{
+	z-index:102;
+}
+
+.project-detail.fixed{
+	position:fixed;
+	z-index:101;
+	/*
+		zIndex 设计
+		1-100 正常
+		浮层 100
+		超出浮层 >100
+	*/
+}
+
+#Contract{
+	display:none;
+}
+#captcha-code{
+	right:0px!important;
+	width:100px!important;
+}
+.modal-footer{
+	position:fixed;
+	bottom:0px;
+	height:50px;
+	line-height:50px;
+	width:100%;
+	max-width:640px;
+	background-color:#28a8ff;
+	z-index:101;
+	text-align:center;
+	display:none;
+}
+.modal-footer{
+
+}
+.modal-footer .button{
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	background-color:transparent;
+}
+.modal-footer button{
+	color:#fff;
+	font-size:16px;
+	text-align:center;
+	background-color:transparent;
+}
+
+
+.input-div{
+	background-color:#fff;
+	border-bottom: 1px solid #ddd;
+	padding-left:16px!important;
+	padding-right:16px!important;
+	margin-left:10px;
+	margin-right:10px;
+	box-sizing:border-box;
+	
+
+}
+.input-div input{
+	width: 100%;
+	height: 43px;
+	text-indent: 0!important;
+	font-size: 15px;
+	line-height: 20px;
+	background: none;
+	border: none!important;
+	background-color: transparent;
+}
+
+
+
+/**/
+.input-div.last-child {
+	border: 0;
+}
+
+.input-div.radius-top {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.input-div.radius-bottom {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+
+/*确认投资开始*/
+.project_invest .amount-c2,
+.project_invest .account-c2,
+.project_invest .contact-c2 {
+	position: relative;
+	margin: 10px;
+}
+
+.project_invest .amount-c4{
+	margin:0 10px;
+	padding:0 10px;
+	font-size:14px;
+	line-height:20px;
+}
+.project_invest .amount-c4 i{
+	font-style:normal;
+	padding-left:12px;
+}
+
+
+/*单品投资页面*/
+.project-detail{
+	margin-bottom:0px;
+}
+
+
+
+.project_invest input {
+	background-color: #fff;
+	border: 1px solid #e7e7e7;
+	height: 40px;
+	line-height: normal;
+	font-size: 16px;
+	text-indent: 10px;
+	width:100%;
+	color: #333;
+}
+
+.project_invest  input::-webkit-input-placeholder,
+.project_invest  input::-moz-placeholder {
+	font-size: 16px;
+}
+.project_invest .amount-c2{
+	line-height:40px;
+}
+.project_invest .amount-c2 .input_div{
+	position:relative;
+	border: 1px solid #e7e7e7;
+	background-color:#fff;
+	height:40px;
+}
+.project_invest .amount-c2 .input_div input{
+	position: absolute;
+	right: 110px;
+	top: 0px;
+	left:12px;
+	height:100%;
+	line-height:normal;
+	text-indent:0px!important;
+	width:auto;
+	text-align:left;
+	font-size: 16px;
+	background-color:#fff;
+	border:none;
+	z-index:2;
+}
+.project_invest .account-c2{
+	line-height:32px;
+	margin:0;
+	padding:0 10px;
+}
+.project_invest .unit {
+	position: absolute;
+	right: 90px;
+	top: 0px;
+	height:100%;
+	width:24px;
+	text-align:center;
+	font-size: 16px;
+	color: #bebebe;
+	z-index:2;
+	border:none;
+	background-color:#fff;
+}
+
+.project_invest .confirm_invest {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 16px;
+	color: #bebebe;
+	height:40px;
+	line-height:40px;
+	width:90px;
+	text-align:center;
+	color:#fff;
+	background-color:#28a8ff;
+	z-index:3;
+}
+
+.project_invest .amount-c2 {
+	margin-top: 10px;
+}
+.project_invest .amount-c3 {
+	margin-top: 10px;
+	margin-left:20px;
+	line-height:24px;
+	color:#F00;
+	font-size:14px;
+}
+
+.project_invest  .account-c2.margin_top0{
+	margin-top:0px!important;
+	padding-top:0px!important;
+	line-height:30px;
+}
+
+
+.project_invest  .account-c2  .avaliable-balance{
+	color:#F00;
+}
+
+.project_invest  .account-c2 div {
+	font-size: 14px;
+	color: #bebebe;
+}
+
+.project_invest .account-c2 div span {
+	margin-right: 10px;
+}
+.project_invest .account-c2.account-c2-con{
+	margin-left:10px;
+	margin-right:10px;
+	padding-right:0px;
+}
+.project_invest .account-c2 span{
+	color:#333;
+}
+.project_invest .account-c2 a {
+	float: right;
+	background-color: #0caffe;
+	padding: 2px 10px;
+	width:60px;
+	text-align:center;
+	color: #fff;
+	
+}
+
+.project_invest  .account-c2 a.invest-all-btn {	
+	background-color: #fff;
+	
+	background-color: #ff7b00;
+	background-color: transparent;
+
+
+	color:#28a8ff;
+	padding:6px 15px;
+	font-size:16px;
+	line-height:16px;
+}
+
+.project_invest .contact-c2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.project_invest .contact-c2 a {
+	display: inline-block;
+	color: #3489fe;
+	padding: 5px;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.project_invest .tip {
+	margin-top: 10px;
+}
+
+.project_invest .tip * {
+	font-size: 12px;
+	color: #bebebe;
+}
+
+.project_invest .tip a {
+	color: #999;
+	padding: 0 3px;
+}
+/*确认投资结束*/
+
+
+
+
+
+.relative #nfd-header{
+	position:relative!important;
+	background-color:#F00;
+}
+.relative #nfd-header{
+	position:relative!important;
+	background-color:#000;
+	padding:40px!important;
+}
+
+
+/*还款计划*/
+#repayment-plans{
+	color:#969696;
+}
+
+#repayment-plans .repayment-plan.payed .icon.interest {
+	background-color: #83c100;
+}
+
+#repayment-plans .repayment-plan.payed .icon.principal {
+	background-color: #ff7549;
+}
+
+#repayment-plans .repayment-plan .icon.interest{
+	background-color:#969696;
+}
+
+
+#repayment-plans .repayment-plan .icon {
+	color: #fff;
+	padding: 3px 5px;
+	margin-right: 15px;
+	display:inline-block;
+	width:60px;
+	text-align:center;
+	background-color:#969696;
+}
+
+.payed{
+	color:#434343;
+}
+.payed .secondary{
+	color:#434343;
+}
+.payed .benjin.icon{
+	background-color:#fe8d01!important;
+}
+
+
+
+/*单品页*/
+.table_horizontal{
+	padding:0;
+	border:0;
+	font-size:12px;
+	vertical-align:top;
+}
+.table_horizontal tr td{
+	vertical-align:text-top;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.table_horizontal tr td:first-child{
+	line-height:22px;
+	color:#969696;
+	text-align:right;
+	padding-right:6px;
+	width:60px;
+}
+.table_horizontal tr td div{
+	line-height:22px;
+}
+
+.table_horizontal2 tr td:first-child{
+	line-height:24px;
+	color:#969696;
+	text-align:right;
+	padding-left:8px;
+	width:60px;
+	white-space:nowrap;
+	
+}
+
+.title_gray{
+	color:#969696;
+}
+.table_horizontal tr td:last-child{
+	padding-left:2px;
+	padding-right:10px;	
+}
+
+
+#nfd-investments .invest-project{
+	margin-bottom:0px;
+	position:relative;
+	z-index:1;
+}
+
+
+#nfd-investments .invest-project.margin_bottom20{
+	margin-bottom:12px;
+}
+
+.project_status{
+	display:none;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	z-index:2;
+	height:120px;
+	width:90px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:100px auto;
+	
+}
+.project_status_min{
+	background-size:80px auto;
+}
+
+.project_status_1 .project_status{/*垫付状态*/
+	background-image:url(../img/project_status/dianfu.png);
+	display:block;
+}
+.project_status_2 .project_status{/*放款状态*/
+	background-image:url(../img/project_status/fangkuan.png);
+	display:block;
+}
+.project_status_3 .project_status{/*还款状态*/
+	background-image:url(../img/project_status/huankuan.png);
+	display:block;
+}
+.project_status_4 .project_status{/*已还清状态*/
+	background-image:url(../img/project_status/huanqing.png);
+	display:block;
+}
+.project_status_1 .can_invest,.project_status_2 .can_invest,.project_status_3 .can_invest,.project_status_4 .can_invest{
+	display:none;
+}
+.project_status_1 .btn,.project_status_2 .btn,.project_status_3 .btn,.project_status_4 .btn{
+	display:none;
+}
+.project_status_1 .progress,.project_status_2 .progress,.project_status_3 .progress,.project_status_4 .progress{
+	display:none!important;
+}
+.invest_btn_con{/*投资按钮容器*/
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:18px;
+	background-color:#28a8ff;
+	color:#fff;
+}
+
+.invest_btn_con a{
+	width:100%;
+	height:100%;
+	display:block;
+	color:#fff;
+}
+
+.invest_btn_con a:link,.invest_btn_con a:visited,.invest_btn_con a:hover,.invest_btn_con a:active{
+	color:#fff;
+}
+
+
+/*wording*/
+.wording.padding_10{
+	padding:10px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #969696;
+}
+.uninvested .wording {
+	margin-top: 14px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #969696;
+}
+.uninvested .prompt {
+	margin-top: 14px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #969696;
+}
+
+
+/*登录 输入框相关样式*/
+#nfd-user-reg-form-c input {
+	width: 100%;
+	margin: 0 0;
+	border: none;
+	background-color: #fff;
+	height: 43px;
+	font-size: 14px;
+}
+
+.input_div1{
+	border: 1px solid #eee;
+	margin:0 10px;
+	padding-left:10px!important;
+	padding-right:0px!important;
+	background-color:#fff;
+}
+.input_div1.radis_top{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+.input_div1.radis_bottom{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.input_div1.radis_all{
+	border-radius:5px;
+	margin-top:20px;
+}
+.input_div1 input{
+	text-indent:0px!important;
+}
+
+
+
+
+
+/*充值页面相关*/
+.recharg_tip1{/*充值提示1*/
+	display:block;
+	color:#333;
+	margin:10px;
+	font-size:14px;
+	line-height:24px;
+}
+
+.account-card.disable{
+}
+.account-card.disable .card-radio{
+	display:none;
+}
+
+.recharg_tip2{
+	position:absolute;
+	right:20px;
+	color:#F00;
+}
+.recharg_tip3{
+	color:#F00;
+}
+
+
+.margin_bottom1{
+	margin-bottom:2px;
+}
+.margin_bottom20{
+	margin-bottom:20px;
+}
+
+#nfd-home-buttons.btn_con{
+	padding:0px!important;
+}
+#nfd-home-buttons a.btn_return{
+	width:100%;
+}
+
+/*获取语音验证码*/
+.get_voice_code{
+	color:#0caffe;
+	color:#fe4701;
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:underline;
+	padding-left:4px;
+}
+
+.voice_code_phone{
+	color:#f00;
+	font-style:normal;
+}
+
+
+#nfd-user-reg-form-c.bank_card_more{
+	margin:0;
+	padding:0;
+}
+
+
+.account-card .left{
+}
+#nfd-account-c .account-card.other_card .card-radio{
+	margin-top:8px;
+}
+#nfd-user-reg-form-c form>div{
+	margin-bottom:1px;
+}
+
+.red_point_con{
+	position:relative;
+	z-index:1;
+}
+
+
+.red_point_con .red_point{
+	content:"";
+	background-color:#F00;
+	z-index:2;
+	width:6px;
+	height:6px;
+	border-radius:6px;
+	left:6px;
+	top:18px;
+	position:absolute;
+}
+
+.abountus_list{
+	padding-left:32px;
+}
+.abountus_list li{
+	list-style:disc;
+	text-indent:0px!important;
+}
+.abountus_aio{
+	text-indent:0px;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:14px!important;
+}
+
+
+.btn-primary.disable{
+	background-color:#666;
+}
+
+.bg_fff{
+	background-color:#fff;
+}
+
+
+.my_tab{
+}
+
+.my_tab3{
+	font-size:0px;
+}
+
+.my_tab3>a{
+	font-size:14px;
+	width:33%;
+	display:inline-block;
+	box-sizing:border-box;
+	padding-left:12px;
+	padding-right:12px;
+	background-color:#edecf1;
+}
+
+.my_tab2{
+	font-size:0px;
+}
+.my_tab2>a{
+	font-size:14px;
+	width:50%;
+	display:inline-block;
+	box-sizing:border-box;
+	padding-left:12px;
+	padding-right:12px;
+	background-color:#edecf1;
+}
+.my_tab2>a span{
+	display:block;
+	text-align:center;
+	line-height:32px;
+}
+.my_tab3>a:nth-child(2){
+	width:34%;
+}
+.my_tab>a.selected{
+	background-color:#fff;
+}
+.my_tab>a span{
+	display:block;
+	text-align:center;
+	line-height:32px;
+}
+
+.my_tab>a.selected span{
+	color:#43b2fe;
+	border-bottom:1px solid #43b2fe;
+}
+
+
+
+
+
+.text_con{
+	position:relative;
+	line-height:16px;
+	
+}
+.text_con .text_more{
+	display:none;
+}
+.text_con.ellipse .text_more{
+	display:block;
+}
+.text_con.ellipse .text_hide{
+	display:none;
+}
+.text_con .text_more,.text_con .text_hide{
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	line-height:16px;
+	padding-left:6px;
+	padding-right:10px;
+	background-image:url(../img/text_ellipsis/ellipsis_bg.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+.ellipse .text_ellipsis{
+	overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.text_blue{
+	color:#28a8ff;
+	font-style:normal;
+	padding-left:8px;
+	background-position:right center;
+	padding-right:10px;
+	background-repeat:no-repeat;
+	background-size:8px auto;
+}
+
+
+.text_more .text_blue{
+	background-image:url(../img/text_ellipsis/down.png);
+}
+.text_hide .text_blue{
+	background-image:url(../img/text_ellipsis/up.png);
+}
+
+
+body.reg_succ{
+	background-image:url(../img/reg_succ/reg_succ_bg.jpg);
+	background-size:contain;
+	background-position:bottom center;
+	background-repeat:no-repeat;
+}
+
+.reg_bonus_con{
+	height:350px;
+	width:320px;
+	margin:0 auto;
+	background-image:url(../img/reg_succ/reg_succ_bg_221.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	position:relative;
+}
+

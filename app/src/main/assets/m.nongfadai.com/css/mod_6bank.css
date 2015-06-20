@@ -1,0 +1,337 @@
+[class^="bank-"],
+[class*="bank-"] {
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
+	margin-right: 5px;
+	margin-top: -1px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: text-top;
+	background-image: url("../img/bank-logo.png");
+	background-repeat: no-repeat;
+	*display: inline;
+	*zoom: 1;
+}
+[class*="bank-2"] {
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	background-image: url("../img/bank-logo@2x.png");
+}
+
+.bank-ABC {
+	background-position: 0 0;
+}
+
+.bank-BCCB {
+	background-position: -24px 0;
+}
+
+.bank-BOC {
+	background-position: -48px 0;
+}
+
+.bank-BOCOM {
+	background-position: -72px 0;
+}
+
+.bank-BOS {
+	background-position: -96px 0;
+}
+
+.bank-CCB {
+	background-position: -120px 0;
+}
+
+.bank-ICBC {
+	background-position: 0 -24px;
+}
+
+.bank-CIB {
+	background-position: -24px -24px;
+}
+
+.bank-CITIC {
+	background-position: -48px -24px;
+}
+
+.bank-CMB {
+	background-position: -72px -24px;
+}
+
+.bank-CMBC {
+	background-position: -96px -24px;
+}
+
+.bank-CZB {
+	background-position: -120px -24px;
+}
+
+.bank-PSBC {
+	background-position: 0 -48px;
+}
+
+.bank-CEB {
+	background-position: -24px -48px;
+}
+
+.bank-GDB {
+	background-position: -48px -48px;
+}
+
+.bank-HXB {
+	background-position: -72px -48px;
+}
+
+.bank-SPDB {
+	background-position: -96px -48px;
+}
+
+.bank-BJRCB {
+	background-position: -120px -48px;
+}
+
+.bank-NJCB {
+	background-position: 0 -72px;
+}
+
+.bank-CBHB {
+	background-position: -24px -72px;
+}
+
+.bank-SRCB {
+	background-position: -48px -72px;
+}
+
+.bank-PINGAN {
+	background-position: -72px -72px;
+}
+
+.bank-SDB {
+	background-position: -96px -72px;
+}
+
+.bank-HZCB {
+	background-position: -120px -72px;
+}
+
+.bank-2-ABC {
+	background-position: 0 0;
+}
+
+.bank-2-BCCB {
+	background-position: -48px 0;
+}
+
+.bank-2-BOC {
+	background-position: -96px 0;
+}
+
+.bank-2-BOCOM {
+	background-position: -144px 0;
+}
+
+.bank-2-BOS {
+	background-position: -192px 0;
+}
+
+.bank-2-CCB {
+	background-position: -240px 0;
+}
+
+.bank-2-ICBC {
+	background-position: 0 -48px;
+}
+
+.bank-2-CIB {
+	background-position: -48px -48px;
+}
+
+.bank-2-CITIC {
+	background-position: -96px -48px;
+}
+
+.bank-2-CMB {
+	background-position: -144px -48px;
+}
+
+.bank-2-CMBC {
+	background-position: -192px -48px;
+}
+
+.bank-2-CZB {
+	background-position: -240px -48px;
+}
+
+.bank-2-PSBC {
+	background-position: 0 -96px;
+}
+
+.bank-2-CEB {
+	background-position: -48px -96px;
+}
+
+.bank-2-GDB {
+	background-position: -96px -96px;
+}
+
+.bank-2-HXB {
+	background-position: -144px -96px;
+}
+
+.bank-2-SPDB {
+	background-position: -192px -96px;
+}
+
+.bank-2-BJRCB {
+	background-position: -240px -96px;
+}
+
+.bank-2-NJCB {
+	background-position: 0 -144px;
+}
+
+.bank-2-CBHB {
+	background-position: -48px -144px;
+}
+
+.bank-2-SRCB {
+	background-position: -96px -144px;
+}
+
+.bank-2-PINGAN {
+	background-position: -144px -144px;
+}
+
+.bank-2-SDB {
+	background-position: -192px -144px;
+}
+
+.bank-2-HZCB {
+	background-position: -240px -144px;
+}
+
+.rechargeBankList input[type='radio'] {
+	margin-top: 11px;
+}
+
+.rechargeBankList .span3 {
+	margin-left: 0;
+}
+
+
+[class^="rechargebank-"],
+[class*="rechargebank-"] {
+	height: 38px;
+	width: 125px;
+	line-height: 38px;
+	margin: 5px 10px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: text-top;
+	background-image: url("../img/recharge-bank.jpg");
+	background-repeat: no-repeat;
+	*display: inline;
+	*zoom: 1;
+}
+
+.rechargebank-ABC {
+	background-position: 0 0;
+}
+
+.rechargebank-BCCB {
+	background-position: -125px 0;
+}
+
+.rechargebank-BOC {
+	background-position: -250px 0;
+}
+
+.rechargebank-BOCOM {
+	background-position: -375px 0;
+}
+
+.rechargebank-BOS {
+	background-position: -500px 0;
+}
+
+.rechargebank-CCB {
+	background-position: -625px 0;
+}
+
+.rechargebank-ICBC {
+	background-position: 0 -38px;
+}
+
+.rechargebank-CIB {
+	background-position: -125px -38px;
+}
+
+.rechargebank-CITIC {
+	background-position: -250px -38px;
+}
+
+.rechargebank-CMB {
+	background-position: -375px -38px;
+}
+
+.rechargebank-CMBC {
+	background-position: -500px -38px;
+}
+
+.rechargebank-CZB {
+	background-position: -625px -38px;
+}
+
+.rechargebank-PSBC {
+	background-position: 0 -76px;
+}
+
+.rechargebank-CEB {
+	background-position: -125px -76px;
+}
+
+.rechargebank-GDB {
+	background-position: -250px -76px;
+}
+
+.rechargebank-HXB {
+	background-position: -375px -76px;
+}
+
+.rechargebank-SPDB {
+	background-position: -500px -76px;
+}
+
+.rechargebank-BJRCB {
+	background-position: -625px -76px;
+}
+
+.rechargebank-NJCB {
+	background-position: 0 -114px;
+}
+
+.rechargebank-CBHB {
+	background-position: -125px -114px;
+}
+
+.rechargebank-SRCB {
+	background-position: -250px -114px;
+}
+
+.rechargebank-PINGAN {
+	background-position: -375px -114px;
+}
+
+.rechargebank-PINGAN {
+	background-position: -375px -114px;
+}
+
+.rechargebank-SDB {
+	background-position: -500px -114px;
+}
+
+.rechargebank-HZCB {
+	background-position: -625px -114px;
+}

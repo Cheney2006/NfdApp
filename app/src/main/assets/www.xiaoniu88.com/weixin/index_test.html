@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript">   
+function showAndroidToast(toast) {
+	alert("1"+android+android.showToast);     
+	for(var p in android){
+		alert(p);
+	}  
+    android.showToast(toast);
+    alert(2);   
+}
+function show(content){ 
+         document.getElementById("countent").innerHTML= 
+             "这是我的javascript调用. 这是："+content; 
+         alert(document.location.href+document.location.hash);
+     } 
+     
+setTimeout(function(){
+	alert(111);
+	var img=new Image();
+	img.src="http://www.xiaoniu88.com/test/favicon.ico";
+	//alert(222);
+},2000);
+</script>
+
+</head>
+<body>
+<div id="countent"></div>
+<input type="button" value="Say hello"
+    onClick="showAndroidToast('Hello Android!')" />
+</body>
+</html>

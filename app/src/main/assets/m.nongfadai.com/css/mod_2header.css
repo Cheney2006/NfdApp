@@ -1,0 +1,170 @@
+@charset "utf-8";
+/*旧头部样式开始*/
+
+
+
+.nfd-header .icon-c a:active, .nfd-header .icon-c a:visited, .nfd-header .icon-c a:focus, .nfd-header .icon-c a:link {
+	border: 0;
+	background-color: transparent;
+	color: #fff;
+}
+.nfd-header .icon-c .title{
+	display:inline-block;
+	margin-top:6px;
+}
+
+.nfd-header .menu img {
+	height: 16px;
+}
+
+.nfd-header .logo img{
+  height: 30px;
+  vertical-align: middle;
+}
+
+.menus {
+	display: none;
+	background-color: #fff;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	top:60px;
+	position:fixed;
+	z-index:99;
+	width:100%;
+	max-width:640px;
+}
+.menus a {
+	float: left;
+	text-align: center;
+}
+.logined a {
+	width: 33%;
+}
+.unlogined a {
+	width: 33%;
+}
+.menus a img {
+	display: block;
+	clear: both;
+	margin: auto;
+	width: 45px;
+}
+
+.menus.show {
+	display: block;
+}
+
+/*旧头部样式结束*/
+
+
+#scroller{
+/*	background-color:rgba(255,0,0,0.5);
+*/}
+/**
+ * 头部样式
+ */
+
+.nfd-header {
+	z-index: 100;
+	position:fixed;
+	top:0px;
+	height: 60px;
+	width: 100%;
+	max-width: 640px;
+	margin: auto;
+	padding: 0px 0;
+	background-color: #28a8ff;
+	border-bottom: 1px solid #2c81ff;
+}
+.nfd-header2{
+	z-index: 101;
+	display:block;
+	position:absolute;
+	top:0px;
+	height: 60px;
+	width: 100%;
+	max-width: 640px;
+	padding: 0px 0;
+	margin: auto;
+	background-color: #28a8ff;
+	border-bottom: 1px solid #2c81ff;
+}
+.nfd-header2{
+	z-index: 99;
+	position:fixed;
+	top:0px;
+	height: 60px;
+	width: 100%;
+	max-width: 640px;
+	margin: auto;
+	padding: 0px 0;
+	background-color: #28a8ff;
+	border-bottom: 1px solid #2c81ff;
+	display:none;
+	height:0px!important;
+	visibility:hidden;
+	opacity:0;
+}
+.nfd-header .icon-c {
+	margin-top:10px;
+	height:48px;
+	padding-bottom: 0px;/*额外增加样式*/
+	border-bottom:2px solid #2d81fe;
+}
+.nfd-header .icon-c .menu {
+	display:block;
+	height:20px;
+	width:22px;
+	padding:0px;
+	float: right;
+	margin-right:10px;	
+	
+	margin-top:12px;
+	background-image:url(../img/menu.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	
+}
+
+.nfd-header .logo {
+	margin-left: 10px;
+	display: inline-block;
+}
+.nfd-header .logo img {
+	height: 40px;
+	vertical-align: middle;
+}
+.nfd-header .register, .nfd-header .login {
+	font-size: 15px;
+	line-height: 30px;
+	color: #fff;
+	margin-top:6px;
+}
+
+.nfd-header .register {
+	margin-right: 18px;
+}
+
+
+.nfd-header .title {
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	margin-left: 20px;
+}
+
+
+.menu-mask {
+	position:fixed;
+	display: none;
+	left: 0px;
+	right:0px;
+	top:60px;
+	bottom:0px;
+	z-index: 98;
+	background-color: #000;
+	opacity: 0.5;
+}
+.menu-mask.show{
+	display:block;
+}

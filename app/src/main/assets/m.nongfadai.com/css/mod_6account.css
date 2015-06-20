@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/**
+ * 我的账户
+ */
+#nfd-account-c .account-balance-c {
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 15px;
+	background-color: #fff;
+	display: block;
+	overflow: hidden;
+}
+
+#nfd-account-c .account-balance-c .figure {
+	float: left;
+	margin-right: 15px;
+}
+
+#nfd-account-c .account-balance-c .figure .avatar {
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+}
+
+#nfd-account-c .account-balance-c .nick {
+	margin: 10px 0 15px;
+}
+
+#nfd-account-c .account-balance-c .money {
+	color: #e63d3d;
+	font-size: 16px;
+}
+
+#nfd-account-c .account-balance-c .money .cent {
+	font-size: 12px;
+}
+
+#nfd-account-c .account-balance-info {
+	font-size: 14px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-top: 1px solid #ddd;
+	overflow: hidden;
+}
+
+#nfd-account-c .account-balance-info > div {
+	width: 49.5%;
+	padding: 10px 0;
+	text-indent: 10px;
+}
+
+#nfd-account-c .account-balance-info > div.first {
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#nfd-account-c .account-balance-info > div.second {
+	border-bottom: 1px solid #ddd;
+}
+
+#nfd-account-links {
+	font-size: 15px;
+}
+
+#nfd-account-links .links-block {
+	margin-bottom: 10px;
+	background: #fff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#nfd-account-links .links-block a {
+	margin-left: 10px;
+	padding: 11px 0;
+	display: block;
+	border-bottom: 1px solid #ddd;
+	color: #969696;
+	padding-left:6px;
+}
+
+#nfd-account-links .links-block a.last-child {
+	border: 0
+}
+
+#nfd-account-links .arrow {
+	float: right;
+	margin-right: 15px;
+	margin-top: 2px;
+	height: 15px;
+}
+
+#nfd-account-links .btn {
+	margin-top: 38px;
+	text-align: center;
+}
+
+#nfd-account-links .btn .margin {
+	margin-right: 20px;
+}
+
+#nfd-account-links .logout {
+	padding: 10px;
+	display: block;
+	background-color: #fff;
+	color: #444;
+	font-size: 15px;
+	text-align: center;
+}

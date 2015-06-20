@@ -1,0 +1,51 @@
+
+/*成功提示页面*/
+.wx_invest_center {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.wx_invest_ok {
+	background: url(../../img/wx_list/wx_arrow_icon.gif) left 5px no-repeat;
+	background-size: 28px 28px;
+	margin: 40px 0;
+	padding-left: 40px;
+	max-width: 80%;
+}
+.wx_invest_error {
+	background-image: url(../../img/wx_list/wx_error.gif);
+	background-position: left center;
+}
+.wx_invest_tip {
+	background-image: url(../../img/wx_list/wx_tip.gif);
+	background-position: left center;
+}
+.wx_invest_ok p {
+	color: #666;
+	font-size: 14px;
+	line-height: 24px;
+}
+.wx_invest_ok p i {
+	color: #ff864a;
+}
+.wx_invest_ok p span {
+	color: #9c9c9c;
+	font-size: 12px;
+}
+.wx_ok_oneline {
+	height: 38px;
+	line-height: 38px;
+}
+.wx_ok_oneline p.nowrap {
+	line-height: 38px;
+	white-space: nowrap;
+}

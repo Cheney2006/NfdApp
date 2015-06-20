@@ -1,0 +1,89 @@
+/*底部导航*/
+.foot {
+	width: 100%;
+	max-width: 640px;
+	margin: 0px auto;
+	height: 48px;
+	border-top: 1px #d0d0d0 solid;
+	background-color: #f4f4f4;
+	position: fixed;
+	bottom: 0px;
+	overflow: hidden;
+}
+.foot_nav_list {
+	display: block;
+	padding: 0 0px 6px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.foot_nav {
+	width: 24%;
+	display: inline-block;
+	text-align: center;
+}
+.foot_nav a {
+	padding-top: 5px;
+	width: 100%;
+	color: #666;
+	font-size: 12px;
+	height: 43px;
+	display: block;
+}
+.foot_nav a em {
+	font-size: 12px;
+}
+.foot_nav a i {
+	display: block;
+	width: 27px;
+	height: 25px;
+	margin: 0 auto;
+}
+a.nav_index_cur, a.nav_invest_cur, a.nav_account_cur, a.nav_about_cur {
+	color: #cda148;
+}
+a.nav_index_cur i {
+	background: url('../../img/weChat/index_cur.png') no-repeat 1px 1px;
+	background-size: 25px 22px;
+}
+a.nav_invest_cur i {
+	background: url('../../img/weChat/invest_cur.png') no-repeat 1px 4px;
+	background-size: 25px 17px;
+}
+a.nav_account_cur i {
+	background: url('../../img/weChat/account_cur.png') no-repeat 1px 2px;
+	background-size: 21px 21px;
+	color: #cda148;
+}
+a.nav_about_cur i {
+	background: url('../../img/weChat/about_cur.png') no-repeat 1px 2px;
+	background-size: 27px 20px;
+	color: #cda148;
+}
+.nav_index i {
+	background: url('../../img/weChat/index.png') no-repeat 1px 1px;
+	background-size: 25px 22px;
+}
+.nav_invest i {
+	background: url('../../img/weChat/invest.png') no-repeat 1px 4px;
+	background-size: 25px 17px;
+}
+.nav_account i {
+	background: url('../../img/weChat/account.png') no-repeat 1px 2px;
+	background-size: 21px 21px;
+}
+.nav_about i {
+	background: url('../../img/weChat/about.png') no-repeat 1px 2px;
+	background-size: 27px 20px;
+}
+.PCstyle {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.PCstyle span {
+	padding: 10px;
+	display: block;
+	color: #666;
+	font-size: 12px;
+}

@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": 71916,
+            "username": "t****t",
+            "investAmount": 1000,
+            "investTime": "2014-12-04 15:53:19",
+            "pageNum": 0,
+            "pageSize": 0,
+            "productId": null
+        },
+        {
+            "id": 71914,
+            "username": "c****e",
+            "investAmount": 1000,
+            "investTime": "2014-12-04 13:58:36",
+            "pageNum": 0,
+            "pageSize": 0,
+            "productId": null
+        }
+    ],
+    "totalRow": 2
+}

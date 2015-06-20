@@ -1,0 +1,139 @@
+/* CSS Document */
+
+.a11 {
+	min-height: 633px;
+	height: 633px;
+	background-image: url(../img/pc_reg/pc_reg_succ_bg2.jpg);
+	background-position: center bottom;
+	background-color: #ccc;
+	text-align: center;
+}
+.b11 {
+	width: 1024px;
+	position: relative;
+	margin: 0 auto;
+	min-height: 100px;
+	height: 100%;
+	background-image: url(../img/pc_reg/reg_bonus_bg2.png);
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+.b11>div{
+	width:100%;
+	left:0px;	
+}
+
+.b112 {
+	position: absolute;
+	z-index: 2;
+	background-repeat: no-repeat;
+	left: 0px;
+	top: 282px;
+	color:#b91009;
+	font-size:16px;
+}
+.b113 {
+	position: absolute;
+	z-index: 3;
+	top: 108px;
+	color: #133b83;
+	font-size: 16px;
+	text-align: center;
+}
+.b114 {
+	position: absolute;
+	z-index: 3;
+	top: 218px;
+	font-size: 12px;
+	color: #fff;
+}
+.b114 i {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: bold;
+	color: #fff600;
+}
+.b115 {
+	position: absolute;
+	z-index: 3;
+	left: 600px;
+	width: 240px;
+	text-align: center;
+	top: 59px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #444444;
+}
+.b116 {
+	position: absolute;
+	z-index: 3;
+	left: 600px;
+	width: 240px;
+	text-align: center;
+	top: 159px;
+	font-size: 14px;
+	color: #a9a9a9;
+}
+.b11>div.b117 {
+	position: absolute;
+	z-index: 3;
+	left: 374px;
+	width:160px;
+	text-align:right;
+	top: 380px;
+	color: #424242;
+	font-size: 15px;
+}
+.b117 i {
+	font-size: 32px;
+	font-style:normal;
+}
+.b11>div.b118 {
+	position: absolute;
+	z-index: 13;
+	width:auto;
+	left: 570px;
+	top: 380px;
+	color: #424242;
+	font-size: 32px;
+	font-style:normal;
+}
+.b11>div.b119 {
+	position: absolute;
+	z-index: 3;
+	left:438px;
+	width:auto;
+	top: 451px;
+	height:48px;
+	line-height:48px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+}
+.b119 a {
+	color:#fff;
+}
+.b119 a:link,.b119 a:visited,.b119 a:hover,.b119 a:active{
+	text-decoration:none;
+	color:#fff;
+}
+.b11>div.b110 {
+	position: absolute;
+	z-index: 3;
+	width:auto;
+	left: 460px;
+	top: 542px;
+	color:#007eff;
+	font-size:13px;
+	text-decoration:none;
+}
+.b110 a{
+	text-decoration:none;
+	color:#007eff;
+	font-size:13px;
+
+}
+.b110 a:link,.b110 a:visited,.b110 a:hover,.b110 a:active{
+	text-decoration:none;
+	color:#007eff;
+}

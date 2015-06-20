@@ -1,0 +1,12 @@
+{
+	"count":1,
+	"realName":"谢***",
+	"card":{
+		"userId":31841,
+		"bankType":"C333CB",
+		"bankTypeName":"建设银行",
+		"bankCardNo":"6227***********0739",
+		"status":4
+	},
+	"weChatIndexControl":"1"
+}

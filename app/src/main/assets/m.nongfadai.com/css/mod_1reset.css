@@ -1,0 +1,10 @@
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);/*移动端dom元素按下外框隐藏*/
+}
+body{
+	position:relative;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #333;
+}

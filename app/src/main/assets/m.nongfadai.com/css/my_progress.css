@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+.my_progress {
+	display: block;
+	width: 23px;
+	height: 23px;
+	line-height: 44px;
+	text-align: center;
+	
+	background-image:url(../img/reg_succ/progress_bar_23.png);
+	background-repeat:no-repeat;
+	font-size: 15px;
+}
+
+.my_progress.progress-bar-0 {
+    background-position: 0 0
+}
+
+.my_progress.progress-bar-1 {
+    background-position: -27px 0
+}
+.my_progress.progress-bar-2 {
+    background-position: -54px 0
+}
+
+.my_progress.progress-bar-3 {
+    background-position: -81px 0
+}
+.my_progress.progress-bar-4 {
+    background-position: -108px 0
+}
+
+.my_progress.progress-bar-5 {
+    background-position: -135px 0
+}
+.my_progress.progress-bar-6 {
+    background-position: -162px 0
+}
+
+.my_progress.progress-bar-7 {
+    background-position: -189px 0
+}
+.my_progress.progress-bar-8 {
+    background-position: -216px 0
+}
+
+.my_progress.progress-bar-9 {
+    background-position: -243px 0
+}
+.my_progress.progress-bar-10 {
+    background-position: -270px 0
+}
+
+.my_progress.progress-bar-11 {
+    background-position: -297px 0
+}
+.my_progress.progress-bar-12 {
+    background-position: -324px 0
+}
+
+.my_progress.progress-bar-13 {
+    background-position: -351px 0
+}
+.my_progress.progress-bar-14 {
+    background-position: -378px 0
+}
+
+.my_progress.progress-bar-15 {
+    background-position: -405px 0
+}
+.my_progress.progress-bar-16 {
+    background-position: -432px 0
+}
+
+.my_progress.progress-bar-17 {
+    background-position: -459px 0
+}
+.my_progress.progress-bar-18 {
+    background-position: -486px 0
+}
+
+.my_progress.progress-bar-19 {
+    background-position: -513px 0
+}
+.my_progress.progress-bar-20 {
+    background-position: -540px 0
+}
+
+.my_progress.progress-bar-21 {
+    background-position: -567px 0
+}
+.my_progress.progress-bar-22 {
+    background-position: -594px 0
+}
+
+.my_progress.progress-bar-23 {
+    background-position: -621px 0
+}
+.my_progress.progress-bar-24 {
+    background-position: -648px 0
+}
+
+.my_progress.progress-bar-25 {
+    background-position: -675px 0
+}
+.my_progress.progress-bar-26 {
+    background-position: -702px 0
+}
+
+.my_progress.progress-bar-27 {
+    background-position: -729px 0
+}
+.my_progress.progress-bar-28 {
+    background-position: -756px 0
+}
+
+.my_progress.progress-bar-29 {
+    background-position: -783px 0
+}
+.my_progress.progress-bar-30 {
+    background-position: -810px 0
+}
+
+.my_progress.progress-bar-31 {
+    background-position: -837px 0
+}
+.my_progress.progress-bar-32 {
+    background-position: -864px 0
+}
+
+.my_progress.progress-bar-33 {
+    background-position: -891px 0
+}
+.my_progress.progress-bar-34 {
+    background-position: -918px 0
+}
+
+.my_progress.progress-bar-35 {
+    background-position: -945px 0
+}
+.my_progress.progress-bar-36 {
+    background-position: -972px 0
+}
+
+.my_progress.progress-bar-37 {
+    background-position: -999px 0
+}
+.my_progress.progress-bar-38 {
+    background-position: -1026px 0
+}
+
+.my_progress.progress-bar-39 {
+    background-position: -1053px 0
+}
+.my_progress.progress-bar-40 {
+    background-position: -1080px 0
+}
+
+.my_progress.progress-bar-41 {
+    background-position: -1107px 0
+}
+.my_progress.progress-bar-42 {
+    background-position: -1134px 0
+}
+
+.my_progress.progress-bar-43 {
+    background-position: -1161px 0
+}
+.my_progress.progress-bar-44 {
+    background-position: -1188px 0
+}
+
+.my_progress.progress-bar-45 {
+    background-position: -1215px 0
+}
+.my_progress.progress-bar-46 {
+    background-position: -1242px 0
+}
+
+.my_progress.progress-bar-47 {
+    background-position: -1269px 0
+}
+.my_progress.progress-bar-48 {
+    background-position: -1296px 0
+}
+
+.my_progress.progress-bar-49 {
+    background-position: -1323px 0
+}
+.my_progress.progress-bar-50 {
+    background-position: -1350px 0
+}
+
+.my_progress.progress-bar-51 {
+    background-position: -1377px 0
+}
+.my_progress.progress-bar-52 {
+    background-position: -1404px 0
+}
+
+.my_progress.progress-bar-53 {
+    background-position: -1431px 0
+}
+.my_progress.progress-bar-54 {
+    background-position: -1458px 0
+}
+
+.my_progress.progress-bar-55 {
+    background-position: -1485px 0
+}
+.my_progress.progress-bar-56 {
+    background-position: -1512px 0}
+
+.my_progress.progress-bar-57 {
+    background-position: -1539px 0
+}
+.my_progress.progress-bar-58 {
+    background-position: -1566px 0
+}
+
+.my_progress.progress-bar-59 {
+    background-position: -1593px 0
+}
+.my_progress.progress-bar-60 {
+    background-position: -1620px 0
+}
+
+.my_progress.progress-bar-61 {
+    background-position: -1647px 0
+}
+.my_progress.progress-bar-62 {
+    background-position: -1674px 0
+}
+
+.my_progress.progress-bar-63 {
+    background-position: -1701px 0
+}
+.my_progress.progress-bar-64 {
+    background-position: -1728px 0
+}
+
+.my_progress.progress-bar-65 {
+    background-position: -1755px 0
+}
+.my_progress.progress-bar-66 {
+    background-position: -1782px 0
+}
+
+.my_progress.progress-bar-67 {
+    background-position: -1809px 0
+}
+.my_progress.progress-bar-68 {
+    background-position: -1836px 0
+}
+
+.my_progress.progress-bar-69 {
+    background-position: -1863px 0
+}
+.my_progress.progress-bar-70 {
+    background-position: -1890px 0
+}
+
+.my_progress.progress-bar-71 {
+    background-position: -1917px 0
+}
+.my_progress.progress-bar-72 {
+    background-position: -1944px 0
+}
+
+.my_progress.progress-bar-73 {
+    background-position: -1971px 0
+}
+.my_progress.progress-bar-74 {
+    background-position: -1998px 0
+}
+
+.my_progress.progress-bar-75 {
+    background-position: -2025px 0
+}
+.my_progress.progress-bar-76 {
+    background-position: -2052px 0
+}
+
+.my_progress.progress-bar-77 {
+    background-position: -2079px 0
+}
+.my_progress.progress-bar-78 {
+    background-position: -2106px 0
+}
+
+.my_progress.progress-bar-79 {
+    background-position: -2133px 0
+}
+.my_progress.progress-bar-80 {
+    background-position: -2160px 0
+}
+
+.my_progress.progress-bar-81 {
+    background-position: -2187px 0
+}
+.my_progress.progress-bar-82 {
+    background-position: -2214px 0
+}
+
+.my_progress.progress-bar-83 {
+    background-position: -2241px 0
+}
+.my_progress.progress-bar-84 {
+    background-position: -2268px 0
+}
+
+.my_progress.progress-bar-85 {
+    background-position: -2295px 0
+}
+.my_progress.progress-bar-86 {
+    background-position: -2322px 0
+}
+
+.my_progress.progress-bar-87 {
+    background-position: -2349px 0
+}
+.my_progress.progress-bar-88 {
+    background-position: -2376px 0
+}
+
+.my_progress.progress-bar-89 {
+    background-position: -2403px 0
+}
+.my_progress.progress-bar-90 {
+    background-position: -2430px 0
+}
+
+.my_progress.progress-bar-91 {
+    background-position: -2457px 0
+}
+.my_progress.progress-bar-92 {
+    background-position: -2484px 0
+}
+
+.my_progress.progress-bar-93 {
+    background-position: -2511px 0
+}
+.my_progress.progress-bar-94 {
+    background-position: -2538px 0
+}
+
+.my_progress.progress-bar-95 {
+    background-position: -2565px 0
+}
+.my_progress.progress-bar-96 {
+    background-position: -2592px 0
+}
+
+.my_progress.progress-bar-97 {
+    background-position: -2619px 0
+}
+.my_progress.progress-bar-98 {
+    background-position: -2646px 0
+}
+
+.my_progress.progress-bar-99 {
+    background-position: -2673px 0
+}
+.my_progress.progress-bar-100 {
+    background-position: -2700px 0
+}
