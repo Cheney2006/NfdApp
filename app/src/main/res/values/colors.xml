@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_welcome_bg">#28a8ff</color>
+    <color name="color_white">#fff</color>
+    <color name="color_black">#000</color>
+</resources>

@@ -6,16 +6,44 @@ android {
 
     defaultConfig {
         applicationId "com.nfd.nfdapp"
-        minSdkVersion 8
+        minSdkVersion 11
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    signingConfigs {
+        debug {
+            storePassword 'nfd2015'
+            keyPassword 'nfd2015'
+            storeFile file('nfd.jks')
+            keyAlias 'nfd'
         }
+        release {
+            storePassword 'nfd2015'
+            keyPassword 'nfd2015'
+            storeFile file('nfd.jks')
+            keyAlias 'nfd'
+        }
+    }
+    buildTypes {
+        debug {
+//            proguardFile 'proguard.cfg'
+//            zipAlignEnabled true
+//            minifyEnabled true
+//            signingConfig signingConfigs.debug
+        }
+        release {
+            proguardFile 'proguard.cfg'
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+    }
+    sourceSets {
+        debug.setRoot('deploy/debug')
+        release.setRoot('deploy/release')
+    }
+    productFlavors {
     }
 }
 

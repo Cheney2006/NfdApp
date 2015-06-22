@@ -1,29 +1,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#cea04a"
-    android:visibility="visible">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <WebView
-        android:id="@+id/webView1"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:visibility="visible" />
+        android:visibility="visible">
 
-    <ImageView
-        android:id="@+id/imageView1"
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ViewStub android:id="@+id/netFailure_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="#cea04a"
-        android:focusable="false"
-        android:scaleType="centerInside"
-        android:src="@mipmap/logo"
-        android:visibility="visible" />
+        android:layout="@layout/net_error" />
+  <!--  <include layout="@layout/net_error"></include>-->
 
 </RelativeLayout>
