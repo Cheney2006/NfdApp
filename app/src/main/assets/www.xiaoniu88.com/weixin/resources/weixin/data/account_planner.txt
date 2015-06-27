@@ -1,9 +1,0 @@
-{
-    "data": {
-        "qrcode": "http://172.20.17.150:8080/weixin/account/qrcode",
-        "url": "http://172.20.17.150:8080/weixin/register/param/fbd7e9c5f052e501"
-    },
-    "status": 0,
-    "errorCode": null,
-    "errorDetails": null
-}

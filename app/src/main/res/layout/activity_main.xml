@@ -1,23 +1,27 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <com.nongfadai.android.view.ScrollSwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="visible">
+        android:layout_height="match_parent">
 
         <WebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </com.nongfadai.android.view.ScrollSwipeRefreshLayout>
 
-    <ViewStub android:id="@+id/netFailure_layout"
+    <include layout="@layout/loading"  />
+
+
+    <ViewStub
+        android:id="@+id/netFailure_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout="@layout/net_error" />
-  <!--  <include layout="@layout/net_error"></include>-->
+    <!--<include layout="@layout/net_error"></include>-->
 
-</RelativeLayout>
+
+</FrameLayout>

@@ -1,7 +1,0 @@
-@charset "utf-8";
-/*我的资料*/
-.wx_info { padding:20px 0; }
-.wx_info_tip { padding:10px; border: #e0af48 solid 1px; background: #fff9e3; margin:0 21px; margin-bottom:15px; }
-.wx_info_tip p { line-height:22px; color:#666; font-size:12px; word-break:break-all; word-wrap:break-word; padding:0; margin:0; width:100%; }
-.wx_info_tip p strong { color:#ff864a; font-weight:normal; white-space:nowrap; }
-.wx_info_list { border-bottom:#e5e5e5 solid 1px; padding:0 21px 15px 21px; }

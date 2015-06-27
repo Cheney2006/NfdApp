@@ -19,7 +19,7 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/deploy/debug/res" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
@@ -41,13 +41,13 @@
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/generated/androidTest/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/debug/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/debug/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/debug/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/debug/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/debug/jni" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/debug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deploy/debug/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/deploy/debug/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/deploy/debug/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/deploy/debug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deploy/debug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deploy/debug/jni" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deploy/debug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
@@ -84,11 +84,13 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-v4-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.0" level="project" />
+    <orderEntry type="library" exported="" name="yftools" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.0" level="project" />
   </component>
 </module>

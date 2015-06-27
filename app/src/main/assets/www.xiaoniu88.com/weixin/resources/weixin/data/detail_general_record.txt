@@ -1,8 +1,0 @@
-{
-    "data": [
-		{
-            "borrowUser":"xie*********gs",
-			"publishTime": 1418027469000,
-			"hasInvestAmount": 0
-        }
-}

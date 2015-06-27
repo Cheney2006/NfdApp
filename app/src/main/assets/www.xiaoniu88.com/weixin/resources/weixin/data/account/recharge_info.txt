@@ -1,9 +1,0 @@
-{
-	"responseType":"0",
-	"userId": 12722,
-	"bankType": "ICBC",
-	"bankTypeName": "平安银行",
-	"bankCardNo": "6553***********4125",
-	"status":0,
-	"balance":"546,3423.00"
-}
