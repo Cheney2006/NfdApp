@@ -1,19 +1,13 @@
 package com.nongfadai.android.utils;
 
-import android.content.Context;
 import android.text.TextUtils;
 
 import com.yftools.LogUtil;
-import com.yftools.util.FileUtil;
-import com.yftools.util.StorageUtil;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
 import java.util.HashMap;
-import java.util.Hashtable;
 
 /**
  * 文件内存缓存
@@ -73,12 +67,10 @@ public class FileCache {
     public InputStream getFileStream(String path) throws Exception {
         InputStream is = null;
         // 缓存中是否有该Bitmap实例的软引用，如果有，从软引用中取得。
-        if (!TextUtils.isEmpty(path)&&hashRefs.containsKey(path)) {
-            LogUtil.d("contrain========"+path);
-            MySoftRef ref = (MySoftRef)hashRefs.get(path);
-            if(ref!=null){
-                is = (InputStream)ref.get();
-            }
+        if (!TextUtils.isEmpty(path) && hashRefs.containsKey(path)) {
+            LogUtil.d("contrain========" + path);
+            MySoftRef ref = (MySoftRef) hashRefs.get(path);
+            is = (InputStream) ref.get();
         }
         return is;
     }

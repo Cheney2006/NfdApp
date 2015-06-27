@@ -3,7 +3,6 @@ package com.nongfadai.android.activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.KeyEvent;
 import android.view.View;
@@ -16,38 +15,23 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
 
 import com.nongfadai.android.R;
 import com.nongfadai.android.activity.base.AbstractActivity;
 import com.nongfadai.android.application.NfdApplication;
-import com.nongfadai.android.utils.FileCache;
-import com.nongfadai.android.utils.URLReader;
 import com.nongfadai.android.view.ScrollSwipeRefreshLayout;
-import com.yftools.BitmapUtil;
-import com.yftools.HttpUtil;
 import com.yftools.LogUtil;
-import com.yftools.bitmap.BitmapCommonUtil;
-import com.yftools.bitmap.BitmapGlobalConfig;
-import com.yftools.bitmap.core.BitmapCache;
-import com.yftools.exception.HttpException;
-import com.yftools.http.RequestParams;
-import com.yftools.http.ResponseInfo;
-import com.yftools.http.ResponseStream;
-import com.yftools.http.callback.RequestCallBack;
-import com.yftools.http.client.HttpRequest;
-import com.yftools.task.PriorityAsyncTask;
 import com.yftools.util.FileUtil;
 import com.yftools.util.StorageUtil;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AbstractActivity implements SwipeRefreshLayout.OnRefreshListener {
 
@@ -63,7 +47,7 @@ public class MainActivity extends AbstractActivity implements SwipeRefreshLayout
     private ViewStub viewStub;
     private View networkErrorView;
     private View loading_ll;
-
+    private Map<String, String> cacheMap = new HashMap<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -220,8 +204,8 @@ public class MainActivity extends AbstractActivity implements SwipeRefreshLayout
                     //先从内存中取
                     // 如果没有软引用，或者从软引用中得到的实例是null，重新构建一个实例，并保存对这个新建实例的软引用
                     //TODO 缓存时将报销
-                    is = FileCache.getInstance().getFileStream(path);
-//                    InputStream is;
+                    //is = FileCache.getInstance().getFileStream(path);
+                    is = new ByteArrayInputStream(cacheMap.get(path).getBytes());
                     if (is == null) {
                         //先从sd卡取
                         String sdFilePath = StorageUtil.getDiskDir(mContext) + FileUtil.getFileSeparator() + path;
@@ -229,11 +213,18 @@ public class MainActivity extends AbstractActivity implements SwipeRefreshLayout
                         if (file.exists()) {//从sd卡中取
                             is = new FileInputStream(file);
                         } else {//从asset中取
-                            is = getAssets().open(path);
+                            LogUtil.d("assets path=" + path);
+                            //is = getResources().getAssets().open(path);
+                            is = getClass().getResourceAsStream("/assets/" + path);
                         }
-                        FileCache.getInstance().addCacheBitmap(is, path);
+                        if (is != null) {
+                            // FileCache.getInstance().addCacheBitmap(is, path);
+                            cacheMap.put(path, inputStream2String(is));
+                        }
                     }
-                    response = new WebResourceResponse(mime, "UTF-8", is);
+                    if (is != null) {//&&is.available()>0
+                        response = new WebResourceResponse(mime, "UTF-8", is);
+                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                     return null;
@@ -267,6 +258,15 @@ public class MainActivity extends AbstractActivity implements SwipeRefreshLayout
             //mSwipeLayout.setVisibility(View.GONE);
             showNetError();
         }
+    }
+
+    public String inputStream2String(InputStream is) throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        int i = -1;
+        while ((i = is.read()) != -1) {
+            baos.write(i);
+        }
+        return baos.toString();
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
